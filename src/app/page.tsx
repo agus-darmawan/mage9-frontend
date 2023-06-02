@@ -6,9 +6,9 @@ import Seo from '@/components/Seo'
 import Navbar from '@/components/navbar/Navbar'
 import Button from '@/components/utils/Button'
 import About from '@/components/About'
+import Carousel from '@/components/carousel/Carousel'
 
 import primaryBackgraund from "../assets/images/backgraund/primary.png"
-import primary2Backgraund from "../assets/images/backgraund/primary2.png"
 
 
 export default function Home() {
@@ -51,6 +51,10 @@ export default function Home() {
         <div id='about'>
           <About />
         </div>
+        <div className="">
+          <Carousel />
+        </div>
+
 
     </div>
   )
