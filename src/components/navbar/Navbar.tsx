@@ -35,7 +35,7 @@ export default function Navbar() {
                     </li>
                     <Navlinks />
                     <li>
-                        <Link href="workshop/" className="py-7 px-3 inline-block">
+                        <Link href="#about" className="py-7 px-3 inline-block">
                         ABOUT US
                         </Link>
                     </li>
@@ -61,7 +61,7 @@ export default function Navbar() {
                         </Link>
                     </li>
                     <li>
-                        <Link href="/workshop/" className="py-7 px-3 inline-block">
+                        <Link href="#about" className="py-7 px-3 inline-block">
                         ABOUT US
                         </Link>
                     </li>
