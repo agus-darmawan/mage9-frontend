@@ -3,6 +3,7 @@ import Navbar from '@/components/navbar/Navbar'
 import CompetitionHero from '@/components/competition/Hero'
 import AboutCompetition from '@/components/competition/About'
 import Rules from '@/components/competition/Rules'
+import Timeline from '@/components/competition/Timeline'
 
 import gamedevBackgraund from "../../../assets/images/backgraund/game.png"
 import gamedevLogo from "../../../assets/images/complogo/game.png"
@@ -31,6 +32,11 @@ export default function GameDev() {
         <Rules 
         catagory={CompetitionData[1].catagory}
         guidebook={CompetitionData[1].guidebook}
+        />
+      </div>
+      <div className="">
+        <Timeline 
+        date={CompetitionData[0].timeline}
         />
       </div>
       

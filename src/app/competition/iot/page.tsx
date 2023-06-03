@@ -3,6 +3,7 @@ import Navbar from '@/components/navbar/Navbar'
 import CompetitionHero from '@/components/competition/Hero'
 import AboutCompetition from '@/components/competition/About'
 import Rules from '@/components/competition/Rules'
+import Timeline from '@/components/competition/Timeline'
 
 import iotBackgraund from "../../../assets/images/backgraund/iot.png"
 import iotLogo from "../../../assets/images/complogo/iot.png"
@@ -31,6 +32,11 @@ export default function IoT() {
         <Rules 
         catagory={CompetitionData[2].catagory}
         guidebook={CompetitionData[2].guidebook}
+        />
+      </div>
+      <div className="">
+        <Timeline 
+        date={CompetitionData[0].timeline}
         />
       </div>
       

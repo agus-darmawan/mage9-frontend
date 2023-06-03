@@ -3,6 +3,7 @@ import Navbar from '@/components/navbar/Navbar'
 import CompetitionHero from '@/components/competition/Hero'
 import AboutCompetition from '@/components/competition/About'
 import Rules from '@/components/competition/Rules'
+import Timeline from '@/components/competition/Timeline'
 
 import appdevBackgraund from "../../../assets/images/backgraund/app.png"
 import appdevLogo from "../../../assets/images/complogo/app.png"
@@ -31,6 +32,11 @@ export default function AppDev() {
         <Rules 
         catagory={CompetitionData[0].catagory}
         guidebook={CompetitionData[0].guidebook}
+        />
+      </div>
+      <div className="">
+        <Timeline 
+        date={CompetitionData[0].timeline}
         />
       </div>
 
