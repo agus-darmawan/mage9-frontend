@@ -8,7 +8,6 @@ import Seo from '@/components/Seo'
 import mageLogo from "../../assets/images/logo.svg"
 import authBackgraund from "../../assets/images/backgraund/auth.png"
 
-
 export default function AuthLayout({
   children,
 }: {
