@@ -8,6 +8,7 @@ import Button from '@/components/utils/Button'
 import About from '@/components/About'
 import Carousel from '@/components/carousel/Carousel'
 import Testimonials from '@/components/testimonials/Testimonials'
+import Footer from '@/components/Footer'
 
 import primaryBackgraund from "../assets/images/backgraund/primary.png"
 
@@ -60,6 +61,7 @@ export default function Home() {
           <Carousel />
         </div>
         <Testimonials />
+        <Footer />
     </div>
   )
 }
