@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '@/components/navbar/Navbar'
 import CompetitionHero from '@/components/competition/Hero'
 import AboutCompetition from '@/components/competition/About'
+import Rules from '@/components/competition/Rules'
 
 import iotBackgraund from "../../../assets/images/backgraund/iot.png"
 import iotLogo from "../../../assets/images/complogo/iot.png"
@@ -24,6 +25,12 @@ export default function IoT() {
         <AboutCompetition 
           description ={CompetitionData[2].decription}
           image = {iotAboutImage}
+        />
+      </div>
+      <div className="">
+        <Rules 
+        catagory={CompetitionData[2].catagory}
+        guidebook={CompetitionData[2].guidebook}
         />
       </div>
       
