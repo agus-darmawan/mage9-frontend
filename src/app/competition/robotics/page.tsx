@@ -31,7 +31,7 @@ export default function IoT() {
       <div className="">
         <Rules 
         catagory={CompetitionData[3].catagory}
-        guidebook={CompetitionData[3]].guidebook}
+        guidebook={CompetitionData[3].guidebook}
         />
       </div>
       <div className="">
