@@ -4,6 +4,7 @@ import CompetitionHero from '@/components/competition/Hero'
 import AboutCompetition from '@/components/competition/About'
 import Rules from '@/components/competition/Rules'
 import Timeline from '@/components/competition/Timeline'
+import Faq1 from '@/components/competition/Faq'
 
 import iotBackgraund from "../../../assets/images/backgraund/iot.png"
 import iotLogo from "../../../assets/images/complogo/iot.png"
@@ -36,8 +37,8 @@ export default function IoT() {
             />
         </div>
         <div>
-            <Timeline 
-            />
+            <Timeline />
+            <Faq1 />
         </div>
       </div>  
     </div>

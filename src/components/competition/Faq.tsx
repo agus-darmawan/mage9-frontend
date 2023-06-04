@@ -1,5 +1,10 @@
 "use client"
+import Image from "next/image";
+import Button from "../utils/Button";
+
 import React, { useState } from "react";
+import avatarGirls from "../../assets/images/avatar/girls.svg"
+import avatarMan from "../../assets/images/avatar/man.svg"
 
 const Faq1 = () => {
     const [show, setShow] = useState(false);
@@ -14,19 +19,37 @@ const Faq1 = () => {
                 <div className=" ">
                     <p className=" font-normal text-base leading-6 text-gray-600 lg:w-8/12 md:w-9/12 ">Here are few of the most frequently asked questions by our valueable customers</p>
                 </div>
-
-                <div className=" border-b-2 border-gray-200 pb-2 flex justify-center items-center md:mt-0 mt-10 md:w-auto w-full ">
-                    <input placeholder="Search" type="text" aria-label="Search" className="lg:w-96 md:w-72 w-full focus:outline-none placeholder-gray-600 text-base font-normal text-gray-600 leading-4 " />
-                    <svg className=" cursor-pointer" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6.66667 11.3333C9.244 11.3333 11.3333 9.244 11.3333 6.66667C11.3333 4.08934 9.244 2 6.66667 2C4.08934 2 2 4.08934 2 6.66667C2 9.244 4.08934 11.3333 6.66667 11.3333Z" stroke="#4B5563" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round" />
-                        <path d="M14 14L10 10" stroke="#4B5563" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round" />
-                    </svg>
-                </div>
             </div>
             <div className=" flex md:flex-row flex-col md:space-x-8 md:mt-16 mt-8">
-                <div className=" md:w-5/12 lg:w-4/12 w-full ">
-                    <img src="https://i.ibb.co/8bCs73h/pexels-ron-lach-8128069-1.png" alt="Img of Glass bottle" className="w-full md:block hidden" />
-                    <img src="https://i.ibb.co/gZMfQJq/pexels-ron-lach-8128069-1-1.png" alt="Img of Glass bottle" className="w-full md:hidden block " />
+                <div className=" md:w-5/12 lg:w-4/12 w-full">
+                    <div className=" justify-between items-center cursor-pointer">
+                        <h1 className=" font-semibold text-xl leading-5 text-gray-800 text-center"> Contact Person </h1>
+                        <div className="flex flex-row items-center">
+                            <h1 className=""></h1>
+                            <div className="flex flex-col items-center mx-10 justify-center mt-10">
+                                <Image 
+                                        width={100}
+                                        height={100}
+                                        className="w-13  rounded-full" 
+                                        src={avatarMan}  
+                                        alt="avatar"
+                                    />
+                                <p className="text-base font-semibold leading-4 my-2 text-gray-800">Contact Person 1 </p>
+                                <p className="text-base leading-4 text-center text-gray-600">Nomor Whatsapp</p>
+                            </div>
+                            <div className="flex flex-col items-center mx-10 justify-center mt-10">
+                                <Image 
+                                        width={100}
+                                        height={100}
+                                        className="w-13 rounded-full" 
+                                        src={avatarMan}  
+                                        alt="avatar"
+                                    />
+                                <p className="text-base font-semibold leading-4 my-2 text-gray-800">Contatc Person 2</p>
+                                <p className="text-base leading-4 text-center text-gray-600">Nomor Whatsapp</p>
+                            </div>
+                        </div>
+                    </div> 
                 </div>
                 <div className=" md:w-7/12 lg:w-8/12 w-full md:mt-0 sm:mt-14 mt-10">
                     {/* <!-- Shipping Section --> */}

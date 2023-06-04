@@ -53,14 +53,16 @@ export default function Home() {
         <div id='about'>
           <About />
         </div>
-        <div>
-            <div className="md:py-8 py-1 px-4 mx-auto max-w-screen-xl text-center lg:py-3 mt-10">
-              <h1 className="md:text-6xl  font-extrabold text-blue-700 text-5xl">COMPETITIONS</h1>
-              <p className="mt-2 text-xl md:text-2xl font-medium text-gray-500 ">Adapun perlombaan yang dilaksanakan pada MAGE 9 adalah</p>
-            </div>
-          <Carousel />
+        <div className="bg-gradient-to-b from-[#EEF7FC] to-white">
+          <div>
+              <div className="md:py-8 py-1 px-4 mx-auto max-w-screen-xl text-center lg:py-3 mt-10">
+                <h1 className="md:text-6xl  font-extrabold text-blue-700 text-5xl">COMPETITIONS</h1>
+                <p className="mt-2 text-xl md:text-2xl font-medium text-gray-500 ">Adapun perlombaan yang dilaksanakan pada MAGE 9 adalah</p>
+              </div>
+            <Carousel />
+          </div>
+          <Testimonials />
         </div>
-        <Testimonials />
         <Footer />
     </div>
   )
