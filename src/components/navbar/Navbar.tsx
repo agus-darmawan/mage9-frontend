@@ -12,7 +12,7 @@ import mageLogo from "../../assets/images/logo.svg"
 export default function Navbar() {
     const [open, setOpen] = useState(false);
     return (
-        <div className="bg-white">
+        <div className="bg-white text-black">
             <div className="flex items-center font-medium justify-around">
                 <div className="z-50 p-5 md:w-auto w-full flex justify-between">
                     <div className="items-center">

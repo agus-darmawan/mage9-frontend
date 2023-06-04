@@ -63,7 +63,7 @@ const Faq1 = () => {
                                 </svg>
                             </button>
                         </div>
-                        <p className={"font-normal text-base leading-6 text-gray-600 mt-4 w-11/12 " + (show ? "block" : "hidden")}>We are covering every major country worldwide. The shipment leaves from US as it is our headquarter. Some extra information you probably need to add here so that the customer is clear of their wanted expectations.</p>
+                        <p className={"font-normal text-base leading-6 text-gray-600 mt-4 w-11/12 " + (show ? "block" : "hidden")}>Cek</p>
                     </div>
 
                     <hr className=" my-7 bg-gray-200" />
