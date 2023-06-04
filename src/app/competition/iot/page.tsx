@@ -36,7 +36,6 @@ export default function IoT() {
       </div>
       <div className="">
         <Timeline 
-        date={CompetitionData[0].timeline}
         />
       </div>
       
