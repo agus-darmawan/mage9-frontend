@@ -22,23 +22,24 @@ export default function AppDev() {
           about = "/competition/appdev/#aboutappdev"
           />
       </div>
-      <div id='aboutappdev'>
-        <AboutCompetition 
-          description ={CompetitionData[0].decription}
-          image = {appdevAboutImage}
-        />
+      <div className="bg-gradient-to-b from-[#F0E59F] to-white">
+        <div id='aboutappdev'>
+          <AboutCompetition 
+            description ={CompetitionData[0].decription}
+            image = {appdevAboutImage}
+          />
+        </div>
+        <div>
+          <Rules 
+          catagory={CompetitionData[0].catagory}
+          guidebook={CompetitionData[0].guidebook}
+          />
+        </div>
+        <div>
+          <Timeline 
+          />
+        </div>
       </div>
-      <div className="">
-        <Rules 
-        catagory={CompetitionData[0].catagory}
-        guidebook={CompetitionData[0].guidebook}
-        />
-      </div>
-      <div className="">
-        <Timeline 
-        />
-      </div>
-
     </div>
   )
 }

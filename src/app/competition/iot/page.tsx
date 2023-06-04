@@ -22,23 +22,24 @@ export default function IoT() {
           about = "/competition/appdev/#aboutIOT"
           />
       </div>
-      <div id='aboutiot'>
-        <AboutCompetition 
-          description ={CompetitionData[2].decription}
-          image = {iotAboutImage}
-        />
-      </div>
-      <div className="">
-        <Rules 
-        catagory={CompetitionData[2].catagory}
-        guidebook={CompetitionData[2].guidebook}
-        />
-      </div>
-      <div className="">
-        <Timeline 
-        />
-      </div>
-      
+      <div className="bg-gradient-to-b from-[#FFD57E] to-white">
+        <div id='aboutiot'>
+            <AboutCompetition 
+            description ={CompetitionData[2].decription}
+            image = {iotAboutImage}
+            />
+        </div>
+        <div>
+            <Rules 
+            catagory={CompetitionData[2].catagory}
+            guidebook={CompetitionData[2].guidebook}
+            />
+        </div>
+        <div>
+            <Timeline 
+            />
+        </div>
+      </div>  
     </div>
   )
 }

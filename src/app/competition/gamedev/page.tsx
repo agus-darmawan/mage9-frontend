@@ -22,23 +22,24 @@ export default function GameDev() {
           about = "/competition/appdev/#aboutgamedev"
           />
       </div>
-      <div id='aboutappdev'>
-        <AboutCompetition 
-          description ={CompetitionData[1].decription}
-          image = {gamedevAboutImage}
-        />
+      <div className="bg-gradient-to-b from-[#FFCDAB] to-white">
+        <div id='aboutappdev'>
+            <AboutCompetition 
+            description ={CompetitionData[1].decription}
+            image = {gamedevAboutImage}
+            />
+        </div>
+        <div>
+            <Rules 
+            catagory={CompetitionData[1].catagory}
+            guidebook={CompetitionData[1].guidebook}
+            />
+        </div>
+        <div>
+            <Timeline 
+            />
+        </div>
       </div>
-      <div className="">
-        <Rules 
-        catagory={CompetitionData[1].catagory}
-        guidebook={CompetitionData[1].guidebook}
-        />
-      </div>
-      <div className="">
-        <Timeline 
-        />
-      </div>
-      
     </div>
   )
 }
