@@ -10,6 +10,7 @@ import gamedevBackgraund from "../../../assets/images/backgraund/game.png"
 import gamedevLogo from "../../../assets/images/complogo/game.png"
 import gamedevAboutImage from "../../../assets/images/about/about-home.png"
 import {CompetitionData} from "../../../Data/CompetitionData"
+import { GameDevFaq } from '@/Data/Faq'
 
 export default function GameDev() {
   return (
@@ -38,7 +39,18 @@ export default function GameDev() {
         </div>
         <div>
             <Timeline />
-            <Faq1 />
+            <Faq1 
+            question1={GameDevFaq[0].question}
+            answer1={GameDevFaq[0].answer}
+            question2={GameDevFaq[1].question}
+            answer2={GameDevFaq[1].answer}
+            question3={GameDevFaq[2].question}
+            answer3={GameDevFaq[2].answer}
+            question4={GameDevFaq[3].question}
+            answer4={GameDevFaq[3].answer}
+            question5={GameDevFaq[4].question}
+            answer5={GameDevFaq[4].answer}
+          />
         </div>
       </div>
     </div>

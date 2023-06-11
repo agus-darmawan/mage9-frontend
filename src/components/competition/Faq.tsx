@@ -6,11 +6,12 @@ import React, { useState } from "react";
 import avatarGirls from "../../assets/images/avatar/girls.svg"
 import avatarMan from "../../assets/images/avatar/man.svg"
 
-const Faq1 = () => {
+const Faq1 = (props:any) => {
     const [show, setShow] = useState(false);
     const [show2, setShow2] = useState(false);
     const [show3, setShow3] = useState(false);
     const [show4, setShow4] = useState(false);
+    const [show5, setShow5] = useState(false);
 
     return (
         <div className=" 2xl:container 2xl:mx-auto md:py-12 lg:px-20 md:px-6 py-9 px-4">
@@ -55,7 +56,7 @@ const Faq1 = () => {
                     {/* <!-- Shipping Section --> */}
                     <div>
                         <div className=" flex justify-between items-center cursor-pointer">
-                            <h3 className=" font-semibold text-xl leading-5 text-gray-800">Shipping</h3>
+                            <h3 className=" font-semibold text-xl leading-5 text-gray-800">{props.question1}</h3>
                             <button aria-label="too" className="cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800" onClick={() => setShow(!show)}>
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path className={show ? "hidden" : "block"} d="M10 4.1665V15.8332" stroke="#1F2937" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round" />
@@ -63,7 +64,7 @@ const Faq1 = () => {
                                 </svg>
                             </button>
                         </div>
-                        <p className={"font-normal text-base leading-6 text-gray-600 mt-4 w-11/12 " + (show ? "block" : "hidden")}>Cek</p>
+                        <p className={"font-normal text-base leading-6 text-gray-600 mt-4 w-11/12 " + (show ? "block" : "hidden")}>{props.answer1}</p>
                     </div>
 
                     <hr className=" my-7 bg-gray-200" />
@@ -72,7 +73,7 @@ const Faq1 = () => {
 
                     <div>
                         <div className=" flex justify-between items-center cursor-pointer">
-                            <h3 className=" font-semibold text-xl leading-5 text-gray-800">Returns</h3>
+                            <h3 className=" font-semibold text-xl leading-5 text-gray-800">{props.question2}</h3>
                             <button aria-label="too" className=" cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800" onClick={() => setShow2(!show2)}>
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path className={show2 ? "hidden" : "block"} d="M10 4.1665V15.8332" stroke="#1F2937" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round" />
@@ -80,7 +81,7 @@ const Faq1 = () => {
                                 </svg>
                             </button>
                         </div>
-                        <p className={"font-normal text-base leading-6 text-gray-600 mt-4 w-11/12 " + (show2 ? "block" : "hidden")}>We are covering every major country worldwide. The shipment leaves from US as it is our headquarter. Some extra information you probably need to add here so that the customer is clear of their wanted expectations.</p>
+                        <p className={"font-normal text-base leading-6 text-gray-600 mt-4 w-11/12 " + (show2 ? "block" : "hidden")}>{props.answer2}</p>
                     </div>
 
                     <hr className=" my-7 bg-gray-200" />
@@ -89,7 +90,7 @@ const Faq1 = () => {
 
                     <div>
                         <div className=" flex justify-between items-center cursor-pointer">
-                            <h3 className=" font-semibold text-xl leading-5 text-gray-800">Exchange</h3>
+                            <h3 className=" font-semibold text-xl leading-5 text-gray-800">{props.question3}</h3>
                             <button aria-label="too" className=" cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800" onClick={() => setShow3(!show3)}>
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path className={show3 ? "hidden" : "block"} d="M10 4.1665V15.8332" stroke="#1F2937" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round" />
@@ -97,21 +98,21 @@ const Faq1 = () => {
                                 </svg>
                             </button>
                         </div>
-                        <p className={"font-normal text-base leading-6 text-gray-600 mt-4 w-11/12 " + (show3 ? "block" : "hidden")}>We are covering every major country worldwide. The shipment leaves from US as it is our headquarter. Some extra information you probably need to add here so that the customer is clear of their wanted expectations.</p>
+                        <p className={"font-normal text-base leading-6 text-gray-600 mt-4 w-11/12 " + (show3 ? "block" : "hidden")}>{props.answer3}</p>
                     </div>
 
                     <hr className=" my-7 bg-gray-200" />
                     <div>
                         <div className=" flex justify-between items-center cursor-pointer">
-                            <h3 className=" font-semibold text-xl leading-5 text-gray-800">Exchange</h3>
-                            <button aria-label="too" className=" cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800" onClick={() => setShow3(!show3)}>
+                            <h3 className=" font-semibold text-xl leading-5 text-gray-800">{props.question4}</h3>
+                            <button aria-label="too" className=" cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800" onClick={() => setShow4(!show4)}>
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path className={show3 ? "hidden" : "block"} d="M10 4.1665V15.8332" stroke="#1F2937" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round" />
+                                    <path className={show4 ? "hidden" : "block"} d="M10 4.1665V15.8332" stroke="#1F2937" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round" />
                                     <path d="M4.16602 10H15.8327" stroke="#1F2937" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
                             </button>
                         </div>
-                        <p className={"font-normal text-base leading-6 text-gray-600 mt-4 w-11/12 " + (show3 ? "block" : "hidden")}>We are covering every major country worldwide. The shipment leaves from US as it is our headquarter. Some extra information you probably need to add here so that the customer is clear of their wanted expectations.</p>
+                        <p className={"font-normal text-base leading-6 text-gray-600 mt-4 w-11/12 " + (show4 ? "block" : "hidden")}>{props.answer4}</p>
                     </div>
 
                     <hr className=" my-7 bg-gray-200" />
@@ -120,15 +121,15 @@ const Faq1 = () => {
 
                     <div>
                         <div className=" flex justify-between items-center cursor-pointer">
-                            <h3 className=" font-semibold text-xl leading-5 text-gray-800">Tracking</h3>
-                            <button aria-label="too" className=" cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800" onClick={() => setShow4(!show4)}>
+                            <h3 className=" font-semibold text-xl leading-5 text-gray-800">{props.question5}</h3>
+                            <button aria-label="too" className=" cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800" onClick={() => setShow5(!show5)}>
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path className={show4 ? "hidden" : "block"} d="M10 4.1665V15.8332" stroke="#1F2937" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round" />
+                                    <path className={show5 ? "hidden" : "block"} d="M10 4.1665V15.8332" stroke="#1F2937" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round" />
                                     <path d="M4.16602 10H15.8327" stroke="#1F2937" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
                             </button>
                         </div>
-                        <p className={"font-normal text-base leading-6 text-gray-600 mt-4 w-11/12 " + (show4 ? "blcok" : "hidden")}>We are covering every major country worldwide. The shipment leaves from US as it is our headquarter. Some extra information you probably need to add here so that the customer is clear of their wanted expectations.</p>
+                        <p className={"font-normal text-base leading-6 text-gray-600 mt-4 w-11/12 " + (show5 ? "blcok" : "hidden")}>{props.answer5}</p>
                     </div>
 
                     <hr className=" my-7 bg-gray-200" />

@@ -16,7 +16,7 @@ export default function Footer() {
                 width={100} 
                 height={100} 
                 alt="mage-logo" 
-                className="mr-2 h-15" />
+                className="mr-2 h-15 md:block lg:block sm:hidden" />
               </div>
             </Link>
           </div>

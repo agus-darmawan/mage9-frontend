@@ -10,6 +10,7 @@ import iotBackgraund from "../../../assets/images/backgraund/iot.png"
 import iotLogo from "../../../assets/images/complogo/iot.png"
 import iotAboutImage from "../../../assets/images/about/about-home.png"
 import {CompetitionData} from "../../../Data/CompetitionData"
+import { IoTDevFaq } from '@/Data/Faq'
 
 export default function IoT() {
   return (
@@ -38,7 +39,18 @@ export default function IoT() {
         </div>
         <div>
             <Timeline />
-            <Faq1 />
+            <Faq1 
+            question1={IoTDevFaq[0].question}
+            answer1={IoTDevFaq[0].answer}
+            question2={IoTDevFaq[1].question}
+            answer2={IoTDevFaq[1].answer}
+            question3={IoTDevFaq[2].question}
+            answer3={IoTDevFaq[2].answer}
+            question4={IoTDevFaq[3].question}
+            answer4={IoTDevFaq[3].answer}
+            question5={IoTDevFaq[4].question}
+            answer5={IoTDevFaq[4].answer}
+          />
         </div>
       </div>  
     </div>

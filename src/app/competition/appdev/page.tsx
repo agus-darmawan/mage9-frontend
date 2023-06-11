@@ -9,7 +9,9 @@ import Faq1 from '@/components/competition/Faq'
 import appdevBackgraund from "../../../assets/images/backgraund/app.png"
 import appdevLogo from "../../../assets/images/complogo/app.png"
 import appdevAboutImage from "../../../assets/images/about/about-home.png"
+
 import {CompetitionData} from "../../../Data/CompetitionData"
+import { AppDevFaq } from '@/Data/Faq'
 
 export default function AppDev() {
   return (
@@ -42,7 +44,18 @@ export default function AppDev() {
         </div>
         <div>
           <Timeline  />
-          <Faq1 />
+          <Faq1 
+            question1={AppDevFaq[0].question}
+            answer1={AppDevFaq[0].answer}
+            question2={AppDevFaq[1].question}
+            answer2={AppDevFaq[1].answer}
+            question3={AppDevFaq[2].question}
+            answer3={AppDevFaq[2].answer}
+            question4={AppDevFaq[3].question}
+            answer4={AppDevFaq[3].answer}
+            question5={AppDevFaq[4].question}
+            answer5={AppDevFaq[4].answer}
+          />
         </div>
       </div>
     </div>
