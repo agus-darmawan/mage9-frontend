@@ -9,7 +9,7 @@ export const links = [
             { name: "APP DEVELOPMENT", link: "/competition/appdev" },
             { name: "GAME DEVELOPMENT", link: "/competition/gamedev" },
             { name: "IoT", link: "/competition/iot" },
-            { name: "ROBOTICS", link: "/competition/robotics" },
+            // { name: "ROBOTICS", link: "/competition/robotics" },
           ],
         },
         {
