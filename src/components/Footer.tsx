@@ -50,8 +50,18 @@ export default function Footer() {
               <h2 className="mb-2 text-sm font-semibold text-gray-900 uppercase">Event</h2>
               <ul className="text-gray-600  font-medium">
                 <li className="mb-2">
-                  <Link href="/workshop" className="hover:underline">
-                    Workshop
+                  <Link href="/workshop/multimedia" className="hover:underline">
+                  Workshop Multimedia
+                  </Link>
+                </li>
+                <li className="mb-2">
+                  <Link href="/workshop/iot" className="hover:underline">
+                  Workshop IoT
+                  </Link>
+                </li>
+                <li className="mb-2">
+                  <Link href="/workshop/robotics" className="hover:underline">
+                    Workshop Robotics
                   </Link>
                 </li>
               </ul>
