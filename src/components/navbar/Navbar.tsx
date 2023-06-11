@@ -34,11 +34,11 @@ export default function Navbar() {
                         </Link>
                     </li>
                     <Navlinks />
-                    <li>
+                    {/* <li>
                         <Link href="#about" className="py-7 px-3 inline-block">
                         ABOUT US
                         </Link>
-                    </li>
+                    </li> */}
                 </ul>
 
                 <div className="md:block hidden">
@@ -60,11 +60,11 @@ export default function Navbar() {
                         HOME
                         </Link>
                     </li>
-                    <li>
+                    {/* <li>
                         <Link href="#about" className="py-7 px-3 inline-block">
                         ABOUT US
                         </Link>
-                    </li>
+                    </li> */}
                     <Navlinks />
 
                     <div className="py-5">
