@@ -7,7 +7,7 @@ export default function Rules(props:any) {
         <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
             <div className="mb-16 md:mb-0 md:max-w-xl sm:mx-auto md:text-center">
                 <h1 className="mb-5 font-sans text-6xl font-extrabold tracking-tight text-primaryColor1 sm:text-4xl sm:leading-none">
-                    Tentang Kompetisi
+                    Teknis Kompetisi
                 </h1>
                 <p className="mb-5 text-base text-semibold text-gray-700 md:text-lg">
                     {props.catagory}

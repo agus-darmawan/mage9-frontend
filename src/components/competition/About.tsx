@@ -5,7 +5,7 @@ export default function AboutCompetition(props:any) {
   return (
     <div>
         <div >
-            <div className="w-full relative pb-10 px-6 xl:px-0">
+            <div className="w-full relative z-0 pb-10 px-6 xl:px-0">
                 <div className="pt-32 lg:flex items-center relative z-10 container mx-auto">
                     <div className="w-full text-center md:text-left lg:w-1/2 h-full">
                         <h1  className="text-primaryColor1 uppercase text-3xl font-black mb-1">Tentang</h1>

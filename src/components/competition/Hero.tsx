@@ -21,7 +21,7 @@ export default function CompetitionHero(props:any) {
             />
           </div>
           <div className="mb-16 md:mb-0  sm:mx-auto md:text-center">
-            <h1 className="md:text-5xl mx-auto font-extrabold text-white py-2  max-w-2xl text-4xl">
+            <h1 className="md:text-5xl font-extrabold text-white py-2 text-center mx-auto max-w-2xl text-4xl">
               {props.text}
             </h1>
           </div>
