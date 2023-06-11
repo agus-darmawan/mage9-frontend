@@ -11,7 +11,7 @@ export const TestimonialData = [
         testimonial: "Sebagai alumni MAGE 5 & 6 menurut saya MAGE sangat berhasil mengadakan acara sebagai media unjuk gigi para indie dev, dan menurut saya tema dari tiap mage yang selalu berganti adalah ide yang keren, karena darisana para indie dev dapat terpacu untuk memberikan sebuah solusi dari tema yang ada dengan cara kreatif & fun.",
     },
     {
-        name: "Resky Dwisantika P",
+        name: "Rezky Dwisantika P",
         title:"Juara 1 APP Dev MAGE 7",
         testimonial: "Pengalaman ikut MAGE 7 tentunya sangat memorable dan tentu saja keren karena membuka jalan lain untuk masuk ITS selain jalur akademik. Semangat lagi panitia MAGE selanjutnya, semoga kegiatannya MAGE ini bisa terus berjalan dengan kedepanya  dan sukses!.",
     },

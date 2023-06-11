@@ -2,7 +2,7 @@ export const CarouselData = [
   {
     title: "App Development",
     description: "Lomba pembuatan aplikasi yang diadakan untuk siswa/i SMA/SMK/sederajat.",
-    link:"appdev",
+    link:"/competition/appdev",
   },
   {
       title: "Game Development",

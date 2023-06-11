@@ -15,13 +15,17 @@ export default function AppDev() {
   return (
     <div>
       <div className="min-h-screen">
-        <Navbar />
+        <div className="relatife z-10 w-full">
+          <Navbar />
+        </div>
+        <div className="-z-10">
         <CompetitionHero 
           image = {appdevBackgraund}
           logo  = {appdevLogo}
           text  = {CompetitionData[0].title}
           about = "/competition/appdev/#aboutappdev"
           />
+        </div>       
       </div>
       <div className="bg-gradient-to-b from-[#F0E59F] to-white">
         <div id='aboutappdev'>

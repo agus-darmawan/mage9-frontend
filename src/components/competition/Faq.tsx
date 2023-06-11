@@ -101,6 +101,20 @@ const Faq1 = () => {
                     </div>
 
                     <hr className=" my-7 bg-gray-200" />
+                    <div>
+                        <div className=" flex justify-between items-center cursor-pointer">
+                            <h3 className=" font-semibold text-xl leading-5 text-gray-800">Exchange</h3>
+                            <button aria-label="too" className=" cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800" onClick={() => setShow3(!show3)}>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path className={show3 ? "hidden" : "block"} d="M10 4.1665V15.8332" stroke="#1F2937" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round" />
+                                    <path d="M4.16602 10H15.8327" stroke="#1F2937" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                        <p className={"font-normal text-base leading-6 text-gray-600 mt-4 w-11/12 " + (show3 ? "block" : "hidden")}>We are covering every major country worldwide. The shipment leaves from US as it is our headquarter. Some extra information you probably need to add here so that the customer is clear of their wanted expectations.</p>
+                    </div>
+
+                    <hr className=" my-7 bg-gray-200" />
 
                     {/* Tracking Section */}
 
