@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export default function CompetitionHero(props:any) {
   return (
-    <div className="w-screen relative">
+    <div className="w-screen relative -z-10">
         <Image className="-z-10 bg-cover bg-center w-[100%] min-h-screen absolute" 
             src={props.image}
             alt={props.text}
