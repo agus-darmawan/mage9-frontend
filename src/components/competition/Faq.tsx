@@ -35,8 +35,8 @@ const Faq1 = (props:any) => {
                                         src={avatarMan}  
                                         alt="avatar"
                                     />
-                                <p className="text-base font-semibold leading-4 my-2 text-gray-800">Contact Person 1 </p>
-                                <p className="text-base leading-4 text-center text-gray-600">Nomor Whatsapp</p>
+                                <p className="text-base font-semibold leading-4 my-2 text-gray-800">Oa Line </p>
+                                <p className="text-base leading-4 text-center text-gray-600">@rio5948f</p>
                             </div>
                             <div className="flex flex-col items-center mx-10 justify-center mt-10">
                                 <Image 
@@ -46,8 +46,8 @@ const Faq1 = (props:any) => {
                                         src={avatarMan}  
                                         alt="avatar"
                                     />
-                                <p className="text-base font-semibold leading-4 my-2 text-gray-800">Contatc Person 2</p>
-                                <p className="text-base leading-4 text-center text-gray-600">Nomor Whatsapp</p>
+                                <p className="text-base font-semibold leading-4 my-2 text-gray-800">Instagram</p>
+                                <p className="text-base leading-4 text-center text-gray-600">mage_its</p>
                             </div>
                         </div>
                     </div> 
