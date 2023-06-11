@@ -47,7 +47,7 @@ export default function Footer() {
               </ul>
             </div>
             <div>
-              <h2 className="mb-2 text-sm font-semibold text-gray-900 uppercase">Event</h2>
+              {/* <h2 className="mb-2 text-sm font-semibold text-gray-900 uppercase">Event</h2>
               <ul className="text-gray-600  font-medium">
                 <li className="mb-2">
                   <Link href="/workshop/multimedia" className="hover:underline">
@@ -64,7 +64,7 @@ export default function Footer() {
                     Workshop Robotics
                   </Link>
                 </li>
-              </ul>
+              </ul> */}
             </div>
           </div>
         </div>

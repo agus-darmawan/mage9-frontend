@@ -12,14 +12,14 @@ export const links = [
             // { name: "ROBOTICS", link: "/competition/robotics" },
           ],
         },
-        {
-          Head: "WORKSHOP",
-          sublink: [
-            { name: "IoT", link: "/workshop/iot" },
-            { name: "MULTIMEDIA", link: "/workshop/multimedia" },
-            { name: "ROBOTICS", link: "/workshop/robotics" },
-          ],
-        },
+        // {
+        //   Head: "WORKSHOP",
+        //   sublink: [
+        //     { name: "IoT", link: "/workshop/iot" },
+        //     { name: "MULTIMEDIA", link: "/workshop/multimedia" },
+        //     { name: "ROBOTICS", link: "/workshop/robotics" },
+        //   ],
+        // },
       ],
     },
   ];
