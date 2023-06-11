@@ -18,7 +18,7 @@ const Faq1 = (props:any) => {
             <h2 className=" font-semibold lg:text-4xl text-3xl lg:leading-9 md:leading-7 leading-9 text-gray-800">Frequently Asked Questions</h2>
             <div className="mt-4 flex md:justify-between md:items-start md:flex-row flex-col justify-start items-start">
                 <div className=" ">
-                    <p className=" font-normal text-base leading-6 text-gray-600 lg:w-8/12 md:w-9/12 ">Here are few of the most frequently asked questions by our valueable customers</p>
+                    <p className=" font-normal text-base leading-6 text-gray-600 lg:w-8/12 md:w-9/12 ">Beberapa pertanyaan yang sering ditanyakan dan jawabanya tersedia dibawah dan bilamana anda mengalami lainya kebingungan dapat menghubungi akun dibawah ini</p>
                 </div>
             </div>
             <div className=" flex md:flex-row flex-col md:space-x-8 md:mt-16 mt-8">
