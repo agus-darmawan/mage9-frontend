@@ -24,8 +24,8 @@ const Faq1 = (props:any) => {
             <div className=" flex md:flex-row flex-col md:space-x-8 md:mt-16 mt-8">
                 <div className=" md:w-5/12 lg:w-4/12 w-full">
                     <div className=" justify-between items-center cursor-pointer">
-                        <h1 className=" font-semibold text-xl leading-5 text-gray-800 text-center"> Contact Person </h1>
-                        <div className="flex flex-row items-center">
+                        <h1 className=" font-semibold text-xl leading-5 mx-auto text-gray-800 text-center mr-20">Contact Person </h1>
+                        <div className="flex flex-row items-center mx-auto">
                             <h1 className=""></h1>
                             <div className="flex flex-col items-center mx-10 justify-center mt-10">
                                 <Image 
@@ -56,7 +56,7 @@ const Faq1 = (props:any) => {
                     {/* <!-- Shipping Section --> */}
                     <div>
                         <div className=" flex justify-between items-center cursor-pointer">
-                            <h3 className=" font-semibold text-xl leading-5 text-gray-800">{props.question1}</h3>
+                            <h3 className="  text-xl leading-5 text-gray-800">{props.question1}</h3>
                             <button aria-label="too" className="cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800" onClick={() => setShow(!show)}>
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path className={show ? "hidden" : "block"} d="M10 4.1665V15.8332" stroke="#1F2937" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round" />
@@ -73,7 +73,7 @@ const Faq1 = (props:any) => {
 
                     <div>
                         <div className=" flex justify-between items-center cursor-pointer">
-                            <h3 className=" font-semibold text-xl leading-5 text-gray-800">{props.question2}</h3>
+                            <h3 className=" text-xl leading-5 text-gray-800">{props.question2}</h3>
                             <button aria-label="too" className=" cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800" onClick={() => setShow2(!show2)}>
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path className={show2 ? "hidden" : "block"} d="M10 4.1665V15.8332" stroke="#1F2937" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round" />
@@ -90,7 +90,7 @@ const Faq1 = (props:any) => {
 
                     <div>
                         <div className=" flex justify-between items-center cursor-pointer">
-                            <h3 className=" font-semibold text-xl leading-5 text-gray-800">{props.question3}</h3>
+                            <h3 className="  text-xl leading-5 text-gray-800">{props.question3}</h3>
                             <button aria-label="too" className=" cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800" onClick={() => setShow3(!show3)}>
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path className={show3 ? "hidden" : "block"} d="M10 4.1665V15.8332" stroke="#1F2937" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round" />
@@ -104,7 +104,7 @@ const Faq1 = (props:any) => {
                     <hr className=" my-7 bg-gray-200" />
                     <div>
                         <div className=" flex justify-between items-center cursor-pointer">
-                            <h3 className=" font-semibold text-xl leading-5 text-gray-800">{props.question4}</h3>
+                            <h3 className=" text-xl leading-5 text-gray-800">{props.question4}</h3>
                             <button aria-label="too" className=" cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800" onClick={() => setShow4(!show4)}>
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path className={show4 ? "hidden" : "block"} d="M10 4.1665V15.8332" stroke="#1F2937" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round" />
@@ -121,7 +121,7 @@ const Faq1 = (props:any) => {
 
                     <div>
                         <div className=" flex justify-between items-center cursor-pointer">
-                            <h3 className=" font-semibold text-xl leading-5 text-gray-800">{props.question5}</h3>
+                            <h3 className="  text-xl leading-5 text-gray-800">{props.question5}</h3>
                             <button aria-label="too" className=" cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800" onClick={() => setShow5(!show5)}>
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path className={show5 ? "hidden" : "block"} d="M10 4.1665V15.8332" stroke="#1F2937" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round" />
