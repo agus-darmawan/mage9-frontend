@@ -1,22 +1,22 @@
-import * as React from 'react';
-import { IconType } from 'react-icons';
-import { ImSpinner2 } from 'react-icons/im';
+import * as React from 'react'
+import { IconType } from 'react-icons'
+import { ImSpinner2 } from 'react-icons/im'
 
-import clsxm from '@/lib/clsxm';
+import clsxm from '@/lib/clsxm'
 
-const ButtonVariant = ['primary', 'outline', 'ghost', 'light', 'dark'] as const;
-const ButtonSize = ['sm', 'base'] as const;
+const ButtonVariant = ['primary', 'outline', 'ghost', 'light', 'dark'] as const
+const ButtonSize = ['sm', 'base'] as const
 
 type ButtonProps = {
-  isLoading?: boolean;
-  isDarkBg?: boolean;
-  variant?: (typeof ButtonVariant)[number];
-  size?: (typeof ButtonSize)[number];
-  leftIcon?: IconType;
-  rightIcon?: IconType;
-  leftIconClassName?: string;
-  rightIconClassName?: string;
-} & React.ComponentPropsWithRef<'button'>;
+  isLoading?: boolean
+  isDarkBg?: boolean
+  variant?: (typeof ButtonVariant)[number]
+  size?: (typeof ButtonSize)[number]
+  leftIcon?: IconType
+  rightIcon?: IconType
+  leftIconClassName?: string
+  rightIconClassName?: string
+} & React.ComponentPropsWithRef<'button'>
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   (
@@ -36,7 +36,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     },
     ref
   ) => {
-    const disabled = isLoading || buttonDisabled;
+    const disabled = isLoading || buttonDisabled
 
     return (
       <button
@@ -149,8 +149,8 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
           </div>
         )}
       </button>
-    );
+    )
   }
-);
+)
 
-export default Button;
+export default Button

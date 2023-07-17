@@ -1,12 +1,12 @@
-import * as React from 'react';
+import * as React from 'react'
 
-import clsxm from '@/lib/clsxm';
+import clsxm from '@/lib/clsxm'
 
-const TextButtonVariant = ['primary', 'basic'] as const;
+const TextButtonVariant = ['primary', 'basic'] as const
 
 type TextButtonProps = {
-  variant?: (typeof TextButtonVariant)[number];
-} & React.ComponentPropsWithRef<'button'>;
+  variant?: (typeof TextButtonVariant)[number]
+} & React.ComponentPropsWithRef<'button'>
 
 const TextButton = React.forwardRef<HTMLButtonElement, TextButtonProps>(
   (
@@ -45,8 +45,8 @@ const TextButton = React.forwardRef<HTMLButtonElement, TextButtonProps>(
       >
         {children}
       </button>
-    );
+    )
   }
-);
+)
 
-export default TextButton;
+export default TextButton

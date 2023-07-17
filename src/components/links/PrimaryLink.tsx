@@ -1,15 +1,15 @@
-import * as React from 'react';
+import * as React from 'react'
 
-import clsxm from '@/lib/clsxm';
+import clsxm from '@/lib/clsxm'
 
 import UnstyledLink, {
   UnstyledLinkProps,
-} from '@/components/links/UnstyledLink';
+} from '@/components/links/UnstyledLink'
 
-const PrimaryLinkVariant = ['primary', 'basic'] as const;
+const PrimaryLinkVariant = ['primary', 'basic'] as const
 type PrimaryLinkProps = {
-  variant?: (typeof PrimaryLinkVariant)[number];
-} & UnstyledLinkProps;
+  variant?: (typeof PrimaryLinkVariant)[number]
+} & UnstyledLinkProps
 
 const PrimaryLink = React.forwardRef<HTMLAnchorElement, PrimaryLinkProps>(
   ({ className, children, variant = 'primary', ...rest }, ref) => {
@@ -36,8 +36,8 @@ const PrimaryLink = React.forwardRef<HTMLAnchorElement, PrimaryLinkProps>(
       >
         {children}
       </UnstyledLink>
-    );
+    )
   }
-);
+)
 
-export default PrimaryLink;
+export default PrimaryLink

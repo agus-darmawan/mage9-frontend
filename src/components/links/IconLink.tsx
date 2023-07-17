@@ -1,11 +1,11 @@
-import * as React from 'react';
-import { IconType } from 'react-icons';
+import * as React from 'react'
+import { IconType } from 'react-icons'
 
-import clsxm from '@/lib/clsxm';
+import clsxm from '@/lib/clsxm'
 
 import UnstyledLink, {
   UnstyledLinkProps,
-} from '@/components/links/UnstyledLink';
+} from '@/components/links/UnstyledLink'
 
 const IconLinkVariant = [
   'primary',
@@ -13,14 +13,14 @@ const IconLinkVariant = [
   'ghost',
   'light',
   'dark',
-] as const;
+] as const
 
 type IconLinkProps = {
-  isDarkBg?: boolean;
-  variant?: (typeof IconLinkVariant)[number];
-  icon?: IconType;
-  iconClassName?: string;
-} & Omit<UnstyledLinkProps, 'children'>;
+  isDarkBg?: boolean
+  variant?: (typeof IconLinkVariant)[number]
+  icon?: IconType
+  iconClassName?: string
+} & Omit<UnstyledLinkProps, 'children'>
 
 const IconLink = React.forwardRef<HTMLAnchorElement, IconLinkProps>(
   (
@@ -87,8 +87,8 @@ const IconLink = React.forwardRef<HTMLAnchorElement, IconLinkProps>(
       >
         {Icon && <Icon className={clsxm(iconClassName)} />}
       </UnstyledLink>
-    );
+    )
   }
-);
+)
 
-export default IconLink;
+export default IconLink

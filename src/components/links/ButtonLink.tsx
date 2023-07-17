@@ -1,11 +1,11 @@
-import * as React from 'react';
-import { IconType } from 'react-icons';
+import * as React from 'react'
+import { IconType } from 'react-icons'
 
-import clsxm from '@/lib/clsxm';
+import clsxm from '@/lib/clsxm'
 
 import UnstyledLink, {
   UnstyledLinkProps,
-} from '@/components/links/UnstyledLink';
+} from '@/components/links/UnstyledLink'
 
 const ButtonLinkVariant = [
   'primary',
@@ -13,18 +13,18 @@ const ButtonLinkVariant = [
   'ghost',
   'light',
   'dark',
-] as const;
-const ButtonLinkSize = ['sm', 'base'] as const;
+] as const
+const ButtonLinkSize = ['sm', 'base'] as const
 
 type ButtonLinkProps = {
-  isDarkBg?: boolean;
-  variant?: (typeof ButtonLinkVariant)[number];
-  size?: (typeof ButtonLinkSize)[number];
-  leftIcon?: IconType;
-  rightIcon?: IconType;
-  leftIconClassName?: string;
-  rightIconClassName?: string;
-} & UnstyledLinkProps;
+  isDarkBg?: boolean
+  variant?: (typeof ButtonLinkVariant)[number]
+  size?: (typeof ButtonLinkSize)[number]
+  leftIcon?: IconType
+  rightIcon?: IconType
+  leftIconClassName?: string
+  rightIconClassName?: string
+} & UnstyledLinkProps
 
 const ButtonLink = React.forwardRef<HTMLAnchorElement, ButtonLinkProps>(
   (
@@ -135,8 +135,8 @@ const ButtonLink = React.forwardRef<HTMLAnchorElement, ButtonLinkProps>(
           </div>
         )}
       </UnstyledLink>
-    );
+    )
   }
-);
+)
 
-export default ButtonLink;
+export default ButtonLink
