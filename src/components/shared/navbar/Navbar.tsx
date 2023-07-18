@@ -138,8 +138,8 @@ export default function Navbar() {
             <li className='link-underline ml-12'>
               <Link href='/faq'>FAQ</Link>
             </li>
-            <li className='mx-12'>
-              <LoginButton link='/auth/login' variant='login' />
+            <li className='mx-12 -mt-2'>
+              <LoginButton link='auth/login' variant='login' />
             </li>
             <li>
               <ThemeToogle />
@@ -166,11 +166,27 @@ export default function Navbar() {
                 </div>
               ))}
               <div className='flex flex-col gap-5 px-8'>
-                <div className='flex flex-row gap-2'>
+                <div
+                  className='flex flex-row gap-2'
+                  onClick={() => {
+                    setdropDownCompe(!dropDownCompe)
+                  }}
+                >
                   Competition
-                  <IconChevronDown className='w-10' />
+                  {dropDownCompe ? (
+                    <IconChevronDown className='inline-block w-10' />
+                  ) : (
+                    <IconChevronDown className='inline-block w-10 rotate-180 transform duration-75' />
+                  )}
                 </div>
-                <div className='flex flex-col gap-5 pl-6 text-base font-medium text-sky-200'>
+                <div
+                  className={`flex flex-col gap-5 pl-6 text-base font-medium text-sky-200 
+                ${
+                  dropDownCompe
+                    ? 'animate-fade-in-down block'
+                    : 'animate-fade-out-up hidden'
+                }`}
+                >
                   {complinks.map(({ href, label }) => (
                     <div key={href}>
                       <Link href={href}>
@@ -191,7 +207,7 @@ export default function Navbar() {
                 </div>
               </div>
               <div className='flex flex-col gap-5 px-8'>
-                <LoginButton link='/auth/login' variant='login' />
+                <LoginButton link='auth/login' variant='login' />
               </div>
             </div>
           </motion.div>

@@ -7,7 +7,7 @@ export default function ThemeToogle() {
     theme == 'dark' ? setTheme('light') : setTheme('dark')
   }
   return (
-    <div className='-mt-2'>
+    <div className='md:-mt-2'>
       <button
         className='rounded-full p-2 hover:bg-gray-200 dark:hidden dark:hover:bg-gray-700'
         onClick={switchTheme}
