@@ -2,7 +2,7 @@ import Head from 'next/head'
 import { useRouter } from 'next/router'
 
 const defaultMeta = {
-  title: 'Home',
+  title: 'Home | MAGE 9 ITS',
   siteName: 'MAGE 9 ITS',
   description:
     'MAGE ( Multimedia dan Game Event ) adalah suatu serangkaian acara yang diadakan oleh Departemen Teknik Komputer Fakultas dari FTEIC Institut Teknologi Sepuluh Nopember Surabaya yang meliputi perlombaan-perlombaan serta workshop. MAGE juga adalah media untuk pelajar dan akademisi dalam mengeksplor kreativitas, inovasi, dan kemampuan di berbagai bidang IT.',
@@ -187,12 +187,6 @@ const favicons: Array<Favicons> = [
     rel: 'icon',
     sizes: '144x144',
     href: '/favicon/android-icon-144x144.png',
-    type: 'image/png',
-  },
-  {
-    rel: 'icon',
-    sizes: '192x192',
-    href: '/favicon/android-icon-192x192.png',
     type: 'image/png',
   },
   {
