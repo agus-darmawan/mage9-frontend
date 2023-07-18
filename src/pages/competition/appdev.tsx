@@ -1,5 +1,6 @@
+import CompetitionData from '@/data/CompetitionData'
+
 import CompetitionPage from '@/components/competition/CompetitionPage'
-import CompetitionData from '@/components/data/CompetitionData'
 
 export default function AppdevPage() {
   return (

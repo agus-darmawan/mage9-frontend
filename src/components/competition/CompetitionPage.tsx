@@ -48,9 +48,9 @@ const CompetitionPage = ({ content }: CompetitionPageProps) => {
       />
       <div
         className={` ${
-          content.title === 'app'
+          content.title === 'app dev'
             ? footerColor.appdevColor
-            : content.title === 'game'
+            : content.title === 'game dev'
             ? footerColor.gamedevColor
             : content.title === 'iot'
             ? footerColor.iotColor

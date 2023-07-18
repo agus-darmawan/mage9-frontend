@@ -1,4 +1,5 @@
-import DevcomTimelineData from '@/components/data/DevcomTimelineData'
+import DevcomTimelineData from '@/data/DevcomTimelineData'
+
 import LeftTimeline from '@/components/shared/LeftTimeline'
 import RightTimeline from '@/components/shared/RightTimeline'
 
@@ -36,10 +37,12 @@ const CompetitionTimeline = ({ title, name }: CompetitionTimelineProps) => {
             <br /> Kompetisi
           </h1>
         </div>
-        <div className='flex min-h-[80vh] flex-col items-center justify-center'>
-          <h1 className='animate-bounce text-4xl font-bold md:text-5xl'>
-            Comming Soon
-          </h1>
+        <div className={title === 'robotics' ? 'block' : 'hidden'}>
+          <div className='flex min-h-[80vh] flex-col items-center justify-center'>
+            <h1 className='animate-bounce text-4xl font-bold md:text-5xl'>
+              Comming Soon
+            </h1>
+          </div>
         </div>
         <div className={title === 'robotics' ? 'hidden' : 'block'}>
           <div className='mx-auto p-2 md:grid md:grid-cols-9'>
