@@ -36,3 +36,15 @@ a {
 .font-aistrike {
   font-family: 'Airstrike', sans-serif;
 }
+
+.debug {
+  border: 4px solid red !important;
+}
+
+.debug2 {
+  border: 4px solid yellow;
+}
+
+.debug3 {
+  border: 4px solid green;
+}

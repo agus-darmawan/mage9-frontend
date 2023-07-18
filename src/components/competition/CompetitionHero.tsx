@@ -40,7 +40,7 @@ const CompetitionHero = ({ title, subtitle }: CompetitionHeroProps) => {
           width={389}
           height={402}
           priority={true}
-          className='h-52 md:h-80'
+          className='h-52 md:h-80 xl:h-auto 2xl:w-auto'
         />
         <h1 className='text-center text-4xl font-bold tracking-[1rem] text-white md:text-6xl md:tracking-[2rem]'>
           {title}/
