@@ -5,7 +5,9 @@ export default function HomePage() {
   return (
     <MainLayout>
       <Seo />
-      <main></main>
+      <main className='flex min-h-screen flex-col items-center justify-center'>
+        <div className='w-80 '></div>
+      </main>
     </MainLayout>
   )
 }

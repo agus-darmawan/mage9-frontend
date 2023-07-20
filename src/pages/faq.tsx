@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import Select from 'react-select'
 
 import FaqData from '@/data/FaqData'
 
@@ -7,28 +6,18 @@ import MainLayout from '@/components/layout/MainLayout'
 import Seo from '@/components/Seo'
 import FaqComponent from '@/components/shared/FaqComponent'
 import Footer from '@/components/shared/Footer'
+import { Option } from '@/components/shared/Option'
+import Select from '@/components/shared/Select'
 
-interface optionProps {
-  id: number
-  name: string
-  label: string
-}
-
-interface ArrayObjectSelectState {
-  selectedOption: optionProps | null
-}
-
-const optionList: optionProps[] = [
-  { id: 1, name: 'general', label: 'General' },
-  { id: 2, name: 'appdev', label: 'Aplication Development' },
-  { id: 2, name: 'gamedev', label: 'Game Development' },
-  { id: 4, name: 'iot', label: 'IoT' },
+const options: Option[] = [
+  { label: 'General', value: 'general' },
+  { label: 'App Development', value: 'appdev' },
+  { label: 'Game Development', value: 'gamedev' },
+  { label: 'IoT', value: 'iot' },
 ]
 
 export default function FAQPage() {
-  const [state, setState] = useState<ArrayObjectSelectState>({
-    selectedOption: optionList[0],
-  })
+  const [selectedItem, setSelectedItem] = useState<Option | null>(null)
   return (
     <MainLayout>
       <Seo templateTitle='FAQ' />
@@ -44,24 +33,19 @@ export default function FAQPage() {
             </h1>
             <div className='mx-auto h-2 w-[80%] bg-gradient-to-l from-slate-500 to-violet-950 md:mx-0 md:w-[40vw] lg:h-3'></div>
           </div>
-          <div className='col-start-2 col-end-3 flex items-end justify-center md:justify-end'>
+          <div className='col-start-2 col-end-3 flex w-60 items-end justify-center md:ml-auto md:justify-end'>
             <Select
-              value={state.selectedOption}
-              defaultValue={state.selectedOption}
-              onChange={(selectedOption) => setState({ selectedOption })}
-              options={optionList}
-              instanceId='select-box'
-              isSearchable={false}
-              isMulti={false}
-              placeholder='Select Category'
-              className='mt-5 h-max w-60 md:mt-0 lg:w-80'
+              placeholder='Select a option'
+              selected={selectedItem}
+              options={options}
+              onChange={(selection: Option) => setSelectedItem(selection)}
             />
           </div>
         </section>
         <section className='pb-10'>
           <div className='container mx-auto mt-10'>
             {FaqData.filter(
-              (FaqData) => FaqData.type === state.selectedOption?.name
+              (FaqData) => FaqData.type === selectedItem?.value
             ).map((filteredFaq) => (
               <div key={filteredFaq.id}>
                 <FaqComponent
