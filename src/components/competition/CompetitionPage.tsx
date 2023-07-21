@@ -26,41 +26,40 @@ interface CompetitionPageProps {
 const CompetitionPage = ({ content }: CompetitionPageProps) => {
   return (
     <MainLayout>
-      <Seo
-        templateTitle={content.title.toUpperCase()}
-        description={content.description}
-      />
-      <CompetitionHero
-        title={content.title.toUpperCase()}
-        subtitle={content.subtitle}
-      />
-      <CompetitionDetails
-        title={content.title.split(' ')[0]}
-        description={content.description}
-      />
-      <CompetitionTeknis
-        title={content.title.split(' ')[0]}
-        catagory={content.catagory}
-      />
-      <CompetitionTimeline
-        title={content.title.split(' ')[0]}
-        name={content.name}
-      />
-      <div
-        className={` ${
-          content.title === 'app dev'
-            ? footerColor.appdevColor
-            : content.title === 'game dev'
-            ? footerColor.gamedevColor
-            : content.title === 'iot'
-            ? footerColor.iotColor
-            : content.title === 'robotics'
-            ? footerColor.roboticsColor
-            : ''
-        }`}
-      >
-        <Footer lineColor='from-white to transparent' footerColor='inherit' />
-      </div>
+      <Seo templateTitle={content.title.toUpperCase()} />
+      <main>
+        <CompetitionHero
+          title={content.title.toUpperCase()}
+          subtitle={content.subtitle}
+        />
+        <CompetitionDetails
+          title={content.title.split(' ')[0]}
+          description={content.description}
+        />
+        <CompetitionTeknis
+          title={content.title.split(' ')[0]}
+          catagory={content.catagory}
+        />
+        <CompetitionTimeline
+          title={content.title.split(' ')[0]}
+          name={content.name}
+        />
+        <div
+          className={` ${
+            content.title === 'app dev'
+              ? footerColor.appdevColor
+              : content.title === 'game dev'
+              ? footerColor.gamedevColor
+              : content.title === 'iot'
+              ? footerColor.iotColor
+              : content.title === 'robotics'
+              ? footerColor.roboticsColor
+              : ''
+          }`}
+        >
+          <Footer lineColor='from-white to transparent' footerColor='inherit' />
+        </div>
+      </main>
     </MainLayout>
   )
 }

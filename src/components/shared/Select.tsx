@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 
 import styles from '../../styles/Select.module.css'
 
-import { Option } from './Option'
+import { Option } from '@/components/shared/Option'
 
 interface SelectProps {
   placeholder?: string
