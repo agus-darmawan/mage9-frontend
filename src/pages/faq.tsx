@@ -33,7 +33,7 @@ export default function FAQPage() {
             </h1>
             <div className='mx-auto h-2 w-[80%] bg-gradient-to-l from-slate-500 to-violet-950 md:mx-0 md:w-[40vw] lg:h-3'></div>
           </div>
-          <div className='col-start-2 col-end-3 flex w-60 items-end justify-center md:ml-auto md:justify-end'>
+          <div className='col-start-2 col-end-3 mx-auto mt-5 flex w-60 items-end justify-center md:ml-auto md:mr-0 md:justify-end'>
             <Select
               placeholder='Select a option'
               selected={selectedItem}

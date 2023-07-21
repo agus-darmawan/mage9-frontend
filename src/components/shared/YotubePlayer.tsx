@@ -24,7 +24,7 @@ export default function YotubePlayer({
           url={videoUrl}
           width={width}
           height={height}
-          autoplay={true}
+          autoPlay={true}
         />
       )}
     </>
