@@ -48,7 +48,7 @@ export default function ImageSwipper({
           disableOnInteraction: false,
         }}
         modules={[Autoplay, Pagination, Navigation]}
-        className='mx-auto w-full'
+        className='myswiper mx-auto w-full'
       >
         {images.map((image: ImageProps) => (
           <SwiperSlide key={image.alt}>

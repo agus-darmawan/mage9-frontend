@@ -25,6 +25,11 @@ export default function YotubePlayer({
           width={width}
           height={height}
           autoPlay={true}
+          controls={false}
+          loop={true}
+          muted={true}
+          playing={true}
+          playsinline={false}
         />
       )}
     </>
