@@ -30,7 +30,7 @@
     "react-player": "^2.12.0",
     "react-star-ratings": "^2.3.0",
     "react-tsparticles": "^1.37.4",
-    "swiper": "^10.0.4",
+    "swiper": "^9.4.1",
     "tailwind-merge": "^1.13.2"
   },
   "devDependencies": {
