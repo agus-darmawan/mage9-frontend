@@ -57,7 +57,7 @@ export default function ImageSwipper({
               alt={image.alt}
               width={width}
               height={height}
-              className='mx-auto object-cover transition duration-500 ease-in-out hover:scale-150'
+              className='mx-auto object-cover'
             />
           </SwiperSlide>
         ))}

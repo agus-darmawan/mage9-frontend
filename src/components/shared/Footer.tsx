@@ -14,7 +14,7 @@ interface FooterProps {
 
 const Footer = ({ lineColor, footerColor }: FooterProps) => {
   return (
-    <footer className={footerColor}>
+    <footer className={`${footerColor} relative z-20`}>
       <div className={`h-8 w-full bg-gradient-to-r ${lineColor}`}></div>
       <div className='flex min-h-[300px] items-center justify-center text-white'>
         <div className='md:grid-col-2  container mx-4 my-10 flex flex-col gap-5 md:grid lg:grid-cols-5'>

@@ -1,5 +1,6 @@
 import MainLayout from '@/components/layout/MainLayout'
 import Seo from '@/components/Seo'
+import BgParticles from '@/components/shared/BgParticles'
 import Footer from '@/components/shared/Footer'
 import ImageSwipper from '@/components/shared/ImageSwiper'
 import { ImageProps, SlideViewProps } from '@/components/shared/SwiperInterface'
@@ -53,6 +54,7 @@ export default function AboutPage() {
   return (
     <MainLayout>
       <Seo templateTitle='About' />
+      <BgParticles />
       <div className='bg-gradient-to-b from-[#B6EADA] to-[#5B8FB9] dark:from-[#03001C] dark:to-[#301E67]'>
         <div className='container mx-auto flex min-h-screen flex-col items-center justify-center'>
           <div className='mx-10 mb-10 text-center text-[#301E67] dark:text-white sm:mx-auto md:max-w-lg lg:max-w-6xl'>
@@ -87,7 +89,7 @@ export default function AboutPage() {
           <h1 className='mb-5 text-center text-5xl font-extrabold tracking-widest text-white md:text-7xl'>
             Video <br /> Profile
           </h1>
-          <div className='container flex max-w-sm flex-col items-center justify-center md:max-w-lg lg:max-h-[40vw] lg:max-w-6xl'>
+          <div className='container z-30 flex max-w-sm flex-col items-center justify-center md:max-w-lg lg:max-h-[40vw] lg:max-w-6xl'>
             <YotubePlayer
               videoUrl='https://www.youtube.com/watch?v=7e90gBu4pas'
               width='90%'

@@ -25,7 +25,7 @@ export const Select: React.FC<SelectProps> = ({
         className='text-md flex min-w-full cursor-pointer flex-row items-center justify-between rounded-[20px] border-2 border-[#5B8FB9] bg-[#301E67] px-5  py-2'
         onClick={() => setShowOptions(!showOptions)}
       >
-        <div className='pr-5 text-left'>
+        <div className='pr-5 text-left text-lg'>
           <h1>{selected ? selected.label : placeholder}</h1>
         </div>
         <div>
@@ -51,7 +51,7 @@ export const Select: React.FC<SelectProps> = ({
               key={option.value}
               className={`w-full cursor-pointer border-b-2 px-2 py-[2px] duration-75 hover:bg-gradient-to-r hover:from-slate-400/50 hover:to-transparent ${styles.lastnoborder}`}
             >
-              <h2 className='text-md min-w-full px-2 py-1'>{option.label}</h2>
+              <h2 className='min-w-full px-2 py-1 text-lg'>{option.label}</h2>
             </div>
           ))}
         </div>

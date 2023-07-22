@@ -1,5 +1,6 @@
 import Image from 'next/image'
 
+import BgParticles from '@/components/shared/BgParticles'
 import ResponsiveThemeHandler from '@/components/shared/ResponsiveTheme'
 
 const imagespath = '/images/competition/details/'
@@ -19,7 +20,8 @@ const CompetitionDetails = ({
   description,
 }: CompetitionDetailsProps) => {
   return (
-    <div className='min-h-screen w-full bg-white dark:bg-[#03001C]'>
+    <div className='relative min-h-screen w-full bg-white dark:bg-[#03001C]'>
+      <BgParticles />
       <div
         className={`h-32 w-full bg-gradient-to-b ${
           title === 'app'

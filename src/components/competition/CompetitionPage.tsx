@@ -55,7 +55,7 @@ const CompetitionPage = ({ content }: CompetitionPageProps) => {
               : content.title === 'robotics'
               ? footerColor.roboticsColor
               : ''
-          }`}
+          } relative z-20`}
         >
           <Footer lineColor='from-white to transparent' footerColor='inherit' />
         </div>

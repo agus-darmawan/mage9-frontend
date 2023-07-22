@@ -31,7 +31,7 @@ const CompetitionHero = ({ title, subtitle }: CompetitionHeroProps) => {
           : title === 'ROBOTICS'
           ? gradientsVariant.roboticsGradient
           : ''
-      }`}
+      } relative z-20`}
     >
       <div className='flex flex-col items-center justify-center'>
         <Image
