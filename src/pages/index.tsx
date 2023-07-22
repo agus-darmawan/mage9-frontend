@@ -154,7 +154,7 @@ export default function HomePage() {
             title='ROBOTICS'
             subtitle='WINTER'
             description='Robotic Competition merupakan lomba pengoperasian robot yang diadakan untuk siswa/i SD dan SMP'
-            link='/competition/robotics'
+            link='competition/robotics'
           />
           <LeftCompetitionBanner
             gradient='from-[#C38154] to-[#FFC26F] dark:from-[#47075E] dark:to-[#C64BF1]'
@@ -163,7 +163,7 @@ export default function HomePage() {
             description='Game Development Competition merupakan lomba pembuatan game
               yang diadakan untuk siswa/i SMA/SMK/sederajat dan mahasiswa
               yang memiliki minat dan bakat dalam mengembangkan permainan.'
-            link='/competition/gamedev'
+            link='competition/gamedev'
           />
         </div>
         <div className=' bg-gradient-radial relative flex min-h-screen flex-col justify-center gap-10 from-[#5B8FB9] from-[0%] to-[#B6EADA] to-[50%] text-black dark:from-[#5B8FB9] dark:to-[#0B1462] dark:text-white md:gap-24'>
@@ -176,7 +176,7 @@ export default function HomePage() {
               SMA/SMK/sederajat dan mahasiswa dalam mengembangkan
               kreativitas, inovasi, dan pemikiran kritis dalam
               pengembangan aplikasi.'
-            link='/competition/appdev'
+            link='competition/appdev'
           />
           <LeftCompetitionBanner
             gradient='from-[#898121] to-[#E7B10A] dark:from-[#4D0334] dark:to-[#CB3699]'
@@ -186,7 +186,7 @@ export default function HomePage() {
               kompetisi MAGE 9 yang berfokus pada pembuatan alat yang
               dapat terintegrasi dengan koneksi nirkabel untuk terhubung
               dengan alat lain yang dikendalikan.'
-            link='/competition/iot'
+            link='competition/iot'
           />
           <div className='h-24 min-w-[100vw] bg-gradient-to-b  from-[#B6EADA] to-white dark:from-[#0B1462] dark:to-[#03001C]'></div>
         </div>

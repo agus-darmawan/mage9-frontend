@@ -1,6 +1,7 @@
 import Image from 'next/image'
 
 import ResponsiveThemeHandler from '@/components/shared/ResponsiveTheme'
+import YotubePlayer from '@/components/shared/YotubePlayer'
 const imagespath = '/images/competition/teknis/'
 const gradientsVariant = {
   appdevGradient:
@@ -16,9 +17,14 @@ const gradientsVariant = {
 interface CompetitionTeknisProps {
   readonly title: string
   readonly catagory: string
+  readonly videoUrl: string
 }
 
-const CompetitionTeknis = ({ title, catagory }: CompetitionTeknisProps) => {
+const CompetitionTeknis = ({
+  title,
+  catagory,
+  videoUrl,
+}: CompetitionTeknisProps) => {
   return (
     <div
       className={`min-h-screen w-full bg-gradient-to-b ${
@@ -41,8 +47,8 @@ const CompetitionTeknis = ({ title, catagory }: CompetitionTeknisProps) => {
           {catagory}
         </p>
       </div>
-      <div className='z-10 mx-[5rem] mt-5 flex h-40 items-center justify-center  rounded-lg bg-white px-10 md:mx-auto md:h-[40vh] md:w-5/12'>
-        <h1 className='text-bold text-2xl text-black '>VIDEO HERE</h1>
+      <div className='z-10 mx-[5rem] mt-5 flex h-40 items-center justify-center  overflow-hidden rounded-lg bg-black px-10 md:mx-auto md:h-[40vh] md:w-5/12'>
+        <YotubePlayer videoUrl={videoUrl} width='200%' height='150%' />
       </div>
       <div className='mx-auto'>
         <ResponsiveThemeHandler type='mddark'>

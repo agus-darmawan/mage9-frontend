@@ -9,7 +9,7 @@ const CompetitionData = [
     catagory:
       'Terbuka untuk siswa/i SMA/SMK/Sederajat dan Mahasiswa S1/D4/Sederajat - (Kelompok 1 sampai 3 Orang)',
     guidebook: '#',
-    video: 'https://www.youtube.com/embed/2Z4m4lnjxkY',
+    videoUrl: 'https://youtu.be/7uQGGN__FB8',
   },
   {
     id: 1,
@@ -21,7 +21,7 @@ const CompetitionData = [
     catagory:
       'Terbuka untuk siswa/i SMA/SMK/Sederajat dan Mahasiswa S1/D4/Sederajat - (Kelompok 1 sampai 3 Orang)',
     guidebook: '#',
-    video: 'https://www.youtube.com/embed/2Z4m4lnjxkY',
+    videoUrl: 'https://youtu.be/K6uxGQIBy1A',
   },
   {
     id: 2,
@@ -32,7 +32,7 @@ const CompetitionData = [
       'Internet of Things Development Competition merupakan lomba pengembangan alat (hardware) yang terintegrasi dengan aplikasi (software) yang memanfaatkan koneksi nirkabel seperti jaringan internet. Pada tahun ini MAGE 9 berfokus pada keyword “Smart Enviroment” yang dapat digunakan peserta untuk memunculkan ide-ide baru dan mengembangkan kreativitas yang mungkin tidak pernah terpikirkan sebelumnya.',
     catagory: 'Terbuka untuk umum - (Kelompok 1 sampai 3 Orang)',
     guidebook: '#',
-    video: 'https://www.youtube.com/embed/2Z4m4lnjxkY',
+    videoUrl: 'https://youtu.be/Zf5LWH8qpb8',
   },
   {
     id: 3,
@@ -44,7 +44,7 @@ const CompetitionData = [
     catagory:
       'Terbuka untuk siswa/i SMP/Sederajat dan siswa/i SMA/SMK/Sederajat - (Kelompok 1 sampai 3 Orang)',
     guidebook: '#',
-    video: 'https://www.youtube.com/embed/2Z4m4lnjxkY',
+    videoUrl: 'https://www.youtube.com/embed/2Z4m4lnjxkY',
   },
 ]
 
