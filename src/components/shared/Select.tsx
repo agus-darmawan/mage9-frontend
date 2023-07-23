@@ -29,12 +29,12 @@ export const Select: React.FC<SelectProps> = ({
           <h1>{selected ? selected.label : placeholder}</h1>
         </div>
         <div>
-          <div className='rounded-full bg-white dark:bg-slate-600'>
+          <div className='rounded-full bg-white  text-black'>
             <IconChevronDown
               className={`${
                 showOptions
-                  ? 'rotate-0 duration-100'
-                  : 'rotate-180 duration-100'
+                  ? 'rotate-180 duration-100'
+                  : 'rotate-0 duration-100'
               }`}
             />
           </div>

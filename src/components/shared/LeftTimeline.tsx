@@ -7,8 +7,8 @@ export default function LeftTimeline({ date, description }: LeftTimelineProps) {
   return (
     <div className='flex flex-row-reverse md:contents'>
       <div className='col-start-3 col-end-5 my-4 ml-auto rounded-xl p-4'>
-        <h3 className='mb-1 text-lg font-semibold'>{date}</h3>
-        <p className='text-justify leading-tight'>{description}</p>
+        <h3 className='mb-1 text-lg font-semibold md:text-right'>{date}</h3>
+        <p className='leading-tight md:text-right'>{description}</p>
       </div>
       <div className='relative col-start-5 col-end-6 mr-10 md:mx-auto'>
         <div className='flex h-full w-6 items-center justify-center'>

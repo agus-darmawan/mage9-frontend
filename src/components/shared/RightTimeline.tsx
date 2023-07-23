@@ -15,7 +15,7 @@ export default function RightTimeline({
         </div>
         <div className='absolute top-1/2 -mt-3 h-6 w-6 rounded-full bg-[#301E67] shadow dark:bg-white'></div>
       </div>
-      <div className=' col-start-6 col-end-10 my-4 mr-auto rounded-xl p-4'>
+      <div className=' col-start-6 col-end-10  mr-auto rounded-xl p-4 first-letter:my-4 md:text-left'>
         <h3 className='mb-1 text-lg font-semibold'>{date}</h3>
         <p>{description}</p>
       </div>

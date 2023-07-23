@@ -14,10 +14,10 @@ export default function FaqComponent({ answer, question }: FaqComponentProps) {
         <div className=''>
           <h4 className='ml-4 text-lg text-white md:text-xl'>{question}</h4>
         </div>
-        <div className='ml-auto'>
+        <div className='ml-auto text-black'>
           <IconChevronDown
-            className={` rounded-full bg-white dark:bg-slate-600 ${
-              active ? 'rotate-180 duration-100' : 'rotate-0 duration-100 '
+            className={` rounded-full bg-white  ${
+              active ? 'rotate-0 duration-100' : 'rotate-180 duration-100 '
             }`}
             onClick={() => setActive(!active)}
           />

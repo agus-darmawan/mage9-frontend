@@ -116,9 +116,9 @@ export default function Navbar() {
             >
               Competition
               {dropDownCompe ? (
-                <IconChevronDown className='inline-block w-10' />
+                <IconChevronDown className='inline-block w-10 rotate-180 duration-100' />
               ) : (
-                <IconChevronDown className='inline-block w-10 rotate-180 transform duration-75' />
+                <IconChevronDown className='duration 100 inline-block w-10 rotate-0 transform duration-75' />
               )}
               <motion.div
                 className='absolute top-[4.3rem]'
