@@ -91,7 +91,7 @@ export default function AboutPage() {
           </h1>
           <div className='container z-30 flex max-w-sm flex-col items-center justify-center md:max-w-lg lg:max-h-[40vw] lg:max-w-6xl'>
             <YotubePlayer
-              videoUrl='https://www.youtube.com/watch?v=7e90gBu4pas'
+              videoUrl='https://www.youtube.com/watch?v=M6FbThjMvKI'
               width='90%'
               height='50vw'
             />

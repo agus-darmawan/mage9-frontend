@@ -176,7 +176,7 @@ export default function workshop() {
             bordercol='border-[#87CBBA]'
             gradient='from-[#87CBBA] to-[#569DAA]'
           />
-          <Link href='auth/login'>
+          <Link href='/auth'>
             <div className='mx-auto mt-10  w-max rounded-full bg-white px-5 py-2 text-[#301E67] hover:bg-slate-400 hover:text-white md:px-20'>
               <h1 className='text-center text-2xl font-semibold sm:text-2xl md:text-3xl lg:text-4xl'>
                 Register Now!
