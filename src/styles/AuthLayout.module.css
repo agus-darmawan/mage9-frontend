@@ -1,0 +1,22 @@
+.bgauth {
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: 180vh;
+}
+
+.bgauth {
+  background-color: #03001c;
+  background-image: url('/images/auth/bg/dark.svg');
+}
+
+@media (min-width: 568px) {
+  .bgauth {
+    background-size: 150vw;
+  }
+}
+
+@media (min-width: 768px) {
+  .bgauth {
+    background-size: 100vw;
+  }
+}

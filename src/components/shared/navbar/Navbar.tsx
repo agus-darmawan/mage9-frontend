@@ -4,11 +4,16 @@ import { Squash as Hamburger } from 'hamburger-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
+import { useAuthState } from 'react-firebase-hooks/auth'
 
 import useScroll from '@/hooks/useScroll'
 
 import LoginButton from '@/components/buttons/LoginButton'
+import Logout from '@/components/buttons/LogoutButton'
+import Avatar from '@/components/shared/Avatar'
 import ThemeToogle from '@/components/shared/ThemeToogle'
+
+import { auth } from '@/firebase/firebase'
 
 import { complinks, links } from './NavLinks'
 
@@ -65,6 +70,7 @@ export default function Navbar() {
       },
     },
   }
+  const [user] = useAuthState(auth)
 
   return (
     <nav
@@ -138,8 +144,14 @@ export default function Navbar() {
             <li className='link-underline ml-12'>
               <Link href='/faq'>FAQ</Link>
             </li>
-            <li className='mx-12 -mt-2'>
-              <LoginButton link='auth/login' variant='login' />
+            <li className='mx-5 -mt-2 flex flex-col items-center justify-center'>
+              {!user && <LoginButton />}
+              {user && (
+                <div className='flex flex-row items-center justify-between'>
+                  <Avatar email={user.email?.toString()} />
+                  <Logout />
+                </div>
+              )}
             </li>
             <li>
               <ThemeToogle />
@@ -207,7 +219,7 @@ export default function Navbar() {
                 </div>
               </div>
               <div className='flex flex-col gap-5 px-8'>
-                <LoginButton link='auth/login' variant='login' />
+                <LoginButton />
               </div>
             </div>
           </motion.div>

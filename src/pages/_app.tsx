@@ -2,6 +2,7 @@ import { AppProps } from 'next/app'
 import Router from 'next/router'
 import { ThemeProvider } from 'next-themes'
 import React, { useEffect, useState } from 'react'
+import { RecoilRoot } from 'recoil'
 
 import '@/styles/globals.css'
 
@@ -28,7 +29,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     }
   }, [])
   return (
-    <>
+    <RecoilRoot>
       {loading ? (
         <Loading />
       ) : (
@@ -36,7 +37,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           <Component {...pageProps} />
         </ThemeProvider>
       )}
-    </>
+    </RecoilRoot>
   )
 }
 

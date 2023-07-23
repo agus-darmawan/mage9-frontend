@@ -62,7 +62,7 @@ export default function HomePage() {
         </div>
         <div className='relative z-20 flex min-h-screen flex-col items-center justify-center bg-white dark:bg-black'>
           <div className='container flex flex-col gap-20 lg:grid lg:grid-cols-2    '>
-            <div className='    text-center md:text-justify'>
+            <div className=' pl-5 text-center md:text-justify'>
               <h1 className=' mb-2 text-4xl font-bold sm:text-5xl md:mb-8 md:text-6xl lg:text-7xl'>
                 About <br /> Mage
               </h1>

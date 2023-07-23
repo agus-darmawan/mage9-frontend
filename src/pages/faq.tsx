@@ -17,7 +17,7 @@ const options: Option[] = [
 ]
 
 export default function FAQPage() {
-  const [selectedItem, setSelectedItem] = useState<Option | null>(null)
+  const [selectedItem, setSelectedItem] = useState(options[0])
   return (
     <MainLayout>
       <Seo templateTitle='FAQ' />

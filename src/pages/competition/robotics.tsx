@@ -1,11 +1,11 @@
-import CompetitionData from '@/data/CompetitionData'
-
-import CompetitionPage from '@/components/competition/CompetitionPage'
-
+import CompetitionHero from '@/components/competition/CompetitionHero'
+import MainLayout from '@/components/layout/MainLayout'
+import Seo from '@/components/Seo'
 export default function RoboticsPage() {
   return (
-    <main>
-      <CompetitionPage content={CompetitionData[3]} />
-    </main>
+    <MainLayout>
+      <Seo templateTitle='Robotics' />
+      <CompetitionHero title='ROBOTICS' subtitle='WINTER' />
+    </MainLayout>
   )
 }

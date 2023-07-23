@@ -20,7 +20,7 @@ export const Select: React.FC<SelectProps> = ({
 }) => {
   const [showOptions, setShowOptions] = useState(false)
   return (
-    <div className='relative z-30 w-full'>
+    <div className='relative z-30 w-full text-white'>
       <div
         className='text-md flex min-w-full cursor-pointer flex-row items-center justify-between rounded-[20px] border-2 border-[#5B8FB9] bg-[#301E67] px-5  py-2'
         onClick={() => setShowOptions(!showOptions)}

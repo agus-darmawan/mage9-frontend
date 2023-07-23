@@ -13,7 +13,7 @@ export default function workshop() {
       <Seo templateTitle='Workshop' />
       <main>
         <div className='flex flex-col text-[#301E67] dark:text-white'>
-          <div className='left-0 right-0 top-0 h-24 bg-black/70'></div>
+          <div className='left-0 right-0 top-0 z-10 h-24 bg-black/70'></div>
           <div className='relative flex min-h-[80vh] flex-col items-center justify-center bg-white dark:bg-[#03001C] md:min-h-[85vh] md:justify-end'>
             <h1 className='font-aistrike z-20 text-5xl md:text-7xl lg:text-8xl'>
               Workshop
@@ -32,7 +32,7 @@ export default function workshop() {
                 height={1080}
                 priority={true}
                 alt='bg-workshop'
-                className='hidden min-h-[60vh] object-cover md:block md:dark:hidden'
+                className='hidden min-h-[60vh] object-cover md:block md:dark:hidden '
               />
               <Image
                 src='/images/workshop/bg/workshop-sm-dark.svg'
