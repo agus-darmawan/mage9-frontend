@@ -75,7 +75,7 @@ export default function HomePage() {
                 media untuk pelajar dan akademisi dalam mengeksplor kreativitas,
                 inovasi, dan kemampuan di berbagai bidang IT.
               </p>
-              <div className='w-[70%]'>
+              <div className='mx-auto w-[70%] md:mx-0'>
                 <MoreButton link='about' text='Baca Selengkapnya' />
               </div>
             </div>

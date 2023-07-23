@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth'
+import { toast } from 'react-toastify'
 import { useSetRecoilState } from 'recoil'
 
 import { authModalState } from '@/atoms/authModalAtom'
@@ -11,14 +12,14 @@ const Signup = () => {
   const handleClick = () => {
     setAuthModalState((prev) => ({ ...prev, type: 'login' }))
   }
-  const router = useRouter()
-  const [createUserWithEmailAndPassword, loading] =
-    useCreateUserWithEmailAndPassword(auth)
   const [inputs, setInputs] = useState({
     email: '',
     displayName: '',
     password: '',
   })
+  const router = useRouter()
+  const [createUserWithEmailAndPassword, user, loading, error] =
+    useCreateUserWithEmailAndPassword(auth)
   const handleChangeInput = (e: React.ChangeEvent<HTMLInputElement>) => {
     setInputs((prev) => ({ ...prev, [e.target.name]: e.target.value }))
   }
@@ -36,10 +37,22 @@ const Signup = () => {
       if (!newUser) return
       router.push('/dashboard')
     } catch (error) {
-      alert('i am error')
+      toast.error(error.message, {
+        position: 'top-center',
+        autoClose: 3000,
+        theme: 'dark',
+      })
     }
   }
-
+  useEffect(() => {
+    if (error)
+      toast.error(error.message, {
+        position: 'top-center',
+        autoClose: 3000,
+        theme: 'dark',
+      })
+    if (user) router.push('/dashboard')
+  }, [error, user, router])
   return (
     <form className='space-y-6 px-6 py-4' onSubmit={handleRegister}>
       <h3 className='text-xl font-medium text-white'>Register to MAGE 9</h3>

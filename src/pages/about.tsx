@@ -73,7 +73,7 @@ export default function AboutPage() {
               kemampuan di berbagai bidang IT.
             </p>
           </div>
-          <div className='container mx-auto'>
+          <div className='container relative z-30 mx-auto'>
             <ImageSwipper
               images={images}
               height={270}

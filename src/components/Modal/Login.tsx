@@ -1,7 +1,8 @@
 import { useRouter } from 'next/router'
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useState } from 'react'
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth'
+import { toast } from 'react-toastify'
 import { useSetRecoilState } from 'recoil'
 
 import { authModalState } from '@/atoms/authModalAtom'
@@ -13,7 +14,7 @@ const Login = () => {
     setAuthModalState((prev) => ({ ...prev, type }))
   }
   const [inputs, setInputs] = useState({ email: '', password: '' })
-  const [signInWithEmailAndPassword, loading] =
+  const [signInWithEmailAndPassword, user, loading, error] =
     useSignInWithEmailAndPassword(auth)
   const router = useRouter()
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -23,7 +24,7 @@ const Login = () => {
     e.preventDefault()
     if (!inputs.email || !inputs.password)
       return {
-        alert: 'Please fill all fields',
+        alert: 'Please fill all fields}',
       }
     try {
       const newUser = await signInWithEmailAndPassword(
@@ -33,10 +34,22 @@ const Login = () => {
       if (!newUser) return
       router.push('/dashboard')
     } catch (error) {
-      alert('i am error')
+      toast.error(error.message, {
+        position: 'top-center',
+        autoClose: 3000,
+        theme: 'dark',
+      })
     }
   }
-
+  useEffect(() => {
+    if (error)
+      toast.error(error.message, {
+        position: 'top-center',
+        autoClose: 3000,
+        theme: 'dark',
+      })
+    if (user) router.push('/dashboard')
+  }, [error, user, router])
   return (
     <form className='space-y-6 px-6 py-4' onSubmit={handleLogin}>
       <h3 className='text-xl font-medium text-white'>Signin to MAGE 9</h3>

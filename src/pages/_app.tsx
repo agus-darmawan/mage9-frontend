@@ -2,8 +2,10 @@ import { AppProps } from 'next/app'
 import Router from 'next/router'
 import { ThemeProvider } from 'next-themes'
 import React, { useEffect, useState } from 'react'
+import { ToastContainer } from 'react-toastify'
 import { RecoilRoot } from 'recoil'
 
+import 'react-toastify/dist/ReactToastify.css'
 import '@/styles/globals.css'
 
 import Loading from '@/components/Loading'
@@ -35,6 +37,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       ) : (
         <ThemeProvider attribute='class'>
           <Component {...pageProps} />
+          <ToastContainer />
         </ThemeProvider>
       )}
     </RecoilRoot>
