@@ -5,7 +5,7 @@ export default function RoboticsPage() {
   return (
     <MainLayout>
       <Seo templateTitle='Robotics' />
-      <CompetitionHero title='ROBOTICS' subtitle='WINTER' />
+      <CompetitionHero title='ROBOTICS' />
     </MainLayout>
   )
 }

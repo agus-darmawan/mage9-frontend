@@ -16,7 +16,6 @@ const footerColor = {
 interface CompetitionPageProps {
   readonly content: {
     readonly title: string
-    readonly subtitle: string
     readonly name: string
     readonly description: string
     readonly catagory: string
@@ -29,10 +28,7 @@ const CompetitionPage = ({ content }: CompetitionPageProps) => {
     <MainLayout>
       <Seo templateTitle={content.title.toUpperCase()} />
       <main>
-        <CompetitionHero
-          title={content.title.toUpperCase()}
-          subtitle={content.subtitle}
-        />
+        <CompetitionHero title={content.title.toUpperCase()} />
         <CompetitionDetails
           title={content.title.split(' ')[0]}
           description={content.description}
