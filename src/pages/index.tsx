@@ -152,14 +152,12 @@ export default function HomePage() {
           <RightCompetitionBanner
             gradient='from-[#87CBB9] to-[#569DAA] dark:from-[#3352C0] dark:to-[#0B1462]'
             title='ROBOTICS'
-            subtitle='WINTER'
             description='Robotic Competition merupakan lomba pengoperasian robot yang diadakan untuk siswa/i SD dan SMP'
             link='competition/robotics'
           />
           <LeftCompetitionBanner
             gradient='from-[#C38154] to-[#FFC26F] dark:from-[#47075E] dark:to-[#C64BF1]'
             title='GAME DEV'
-            subtitle='FALL'
             description='Game Development Competition merupakan lomba pembuatan game
               yang diadakan untuk siswa/i SMA/SMK/sederajat dan mahasiswa
               yang memiliki minat dan bakat dalam mengembangkan permainan.'
@@ -168,9 +166,8 @@ export default function HomePage() {
         </div>
         <div className=' bg-gradient-radial relative flex min-h-screen flex-col justify-center gap-10 from-[#5B8FB9] from-[0%] to-[#B6EADA] to-[50%] text-black dark:from-[#5B8FB9] dark:to-[#0B1462] dark:text-white md:gap-24'>
           <RightCompetitionBanner
-            gradient='from-[#C38154] to-[#FFC26F] dark:from-[#16BC6C] dark:to-[#0A4026]'
+            gradient='from-[#F7A76C] to-[#EC7272] dark:from-[#16BC6C] dark:to-[#0A4026]'
             title='APP DEV'
-            subtitle='SPRING'
             description='Application Development Competition merupakan sebuah
               kompetisi yang bertujuan untuk mendorong siswa/i
               SMA/SMK/sederajat dan mahasiswa dalam mengembangkan
@@ -181,7 +178,6 @@ export default function HomePage() {
           <LeftCompetitionBanner
             gradient='from-[#898121] to-[#E7B10A] dark:from-[#4D0334] dark:to-[#CB3699]'
             title='IOT'
-            subtitle='SUMMER'
             description='Internet of Things (IoT) Competition merupakan cabang
               kompetisi MAGE 9 yang berfokus pada pembuatan alat yang
               dapat terintegrasi dengan koneksi nirkabel untuk terhubung
@@ -206,9 +202,6 @@ export default function HomePage() {
                   pengunjung dapat mengunjungi semua pameran dari tiap tim
                   cabang lomba apapun.
                 </p>
-                <div className='mx-auto md:mr-auto'>
-                  <MoreButton link='#' text='Baca Selengkapnya' />
-                </div>
               </div>
             </div>
           </div>

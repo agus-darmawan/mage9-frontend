@@ -13,11 +13,10 @@ const gradientsVariant = {
 }
 
 interface CompetitionHeroProps {
-  readonly subtitle: string
   readonly title: string
 }
 
-const CompetitionHero = ({ title, subtitle }: CompetitionHeroProps) => {
+const CompetitionHero = ({ title }: CompetitionHeroProps) => {
   return (
     <div
       className={`left-0 right-0 top-0 flex min-h-screen items-center justify-center bg-gradient-to-b 
@@ -43,11 +42,7 @@ const CompetitionHero = ({ title, subtitle }: CompetitionHeroProps) => {
           className='h-52 md:h-80 xl:h-auto 2xl:w-auto'
         />
         <h1 className='text-center text-4xl font-bold tracking-[1rem] text-white md:text-6xl md:tracking-[2rem]'>
-          {title}/
-          <span className='font-extralight'>
-            <br />
-            {subtitle}
-          </span>
+          {title}
         </h1>
       </div>
     </div>

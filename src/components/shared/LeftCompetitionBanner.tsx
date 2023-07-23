@@ -8,7 +8,6 @@ import { CompetitionBannerProps } from '@/components/shared/CompetitionBanner'
 export default function LeftCompetitionBanner({
   gradient,
   title,
-  subtitle,
   description,
   link,
 }: CompetitionBannerProps) {
@@ -28,8 +27,7 @@ export default function LeftCompetitionBanner({
       <div className='col-start-2 col-end-4 flex h-80 flex-col items-end justify-center rounded-r-[80px]'>
         <div className='mr-5 flex flex-col items-end justify-center md:mr-20'>
           <h1 className=' text-right text-2xl font-bold md:text-3xl lg:text-4xl'>
-            {title} / <br />{' '}
-            <span className='text-right font-light '>{subtitle}</span>
+            {title}
           </h1>
           <p className='mb-2 text-right text-xs md:mb-8 md:text-sm lg:text-lg'>
             {description}
