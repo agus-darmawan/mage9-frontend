@@ -219,7 +219,12 @@ export default function Navbar() {
                 </div>
               </div>
               <div className='flex flex-col gap-5 px-8'>
-                <LoginButton />
+                {!user && <LoginButton />}
+                {user && (
+                  <div className='flex flex-row items-center justify-between'>
+                    <Logout />
+                  </div>
+                )}
               </div>
             </div>
           </motion.div>
