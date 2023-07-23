@@ -5,6 +5,8 @@ import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth'
 import { toast } from 'react-toastify'
 import { useSetRecoilState } from 'recoil'
 
+import LoginGoogle from '@/components/buttons/LoginGoogle'
+
 import { authModalState } from '@/atoms/authModalAtom'
 import { auth } from '@/firebase/firebase'
 
@@ -48,7 +50,7 @@ const Login = () => {
         autoClose: 3000,
         theme: 'dark',
       })
-    if (user) router.push('/dashboard')
+    if (user) router.push('/')
   }, [error, user, router])
   return (
     <form className='space-y-6 px-6 py-4' onSubmit={handleLogin}>
@@ -97,6 +99,7 @@ const Login = () => {
       >
         {loading ? 'Loading...' : 'Signin'}
       </button>
+      <LoginGoogle />
       <button
         className='flex w-full justify-end'
         onClick={() => handleClick('forgotPassword')}

@@ -4,9 +4,10 @@ import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth'
 import { toast } from 'react-toastify'
 import { useSetRecoilState } from 'recoil'
 
+import LoginGoogle from '@/components/buttons/LoginGoogle'
+
 import { authModalState } from '@/atoms/authModalAtom'
 import { auth } from '@/firebase/firebase'
-
 const Signup = () => {
   const setAuthModalState = useSetRecoilState(authModalState)
   const handleClick = () => {
@@ -35,7 +36,7 @@ const Signup = () => {
         inputs.password
       )
       if (!newUser) return
-      router.push('/dashboard')
+      router.push('/')
     } catch (error) {
       toast.error(error.message, {
         position: 'top-center',
@@ -91,7 +92,7 @@ const Signup = () => {
               block w-full rounded-lg border-2 border-gray-500 bg-gray-600 p-2.5 text-white placeholder-gray-400
               outline-none focus:border-blue-500 focus:ring-blue-500 sm:text-sm
           '
-          placeholder='John Doe'
+          placeholder='Your Name'
         />
       </div>
       <div>
@@ -121,6 +122,7 @@ const Signup = () => {
       >
         {loading ? 'Loading...' : 'Register'}
       </button>
+      <LoginGoogle />
       <div className='text-sm font-medium text-gray-300'>
         Alredy Have an account?{' '}
         <a
