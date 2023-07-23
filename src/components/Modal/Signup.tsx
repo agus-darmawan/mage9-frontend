@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth'
+import { AiOutlineEye, AiOutlineEyeInvisible } from 'react-icons/ai'
 import { toast } from 'react-toastify'
 import { useSetRecoilState } from 'recoil'
 
@@ -9,6 +10,7 @@ import LoginGoogle from '@/components/buttons/LoginGoogle'
 import { authModalState } from '@/atoms/authModalAtom'
 import { auth } from '@/firebase/firebase'
 const Signup = () => {
+  const [showPassword, setShowPassword] = useState(false)
   const setAuthModalState = useSetRecoilState(authModalState)
   const handleClick = () => {
     setAuthModalState((prev) => ({ ...prev, type: 'login' }))
@@ -64,25 +66,28 @@ const Signup = () => {
         >
           Your Email
         </label>
-        <input
-          onChange={handleChangeInput}
-          type='email'
-          name='email'
-          id='email'
-          className='
+        <div className='relative'>
+          <input
+            onChange={handleChangeInput}
+            type='email'
+            name='email'
+            id='email'
+            className='
               block w-full rounded-lg border-2 border-gray-500 bg-gray-600 p-2.5 text-white placeholder-gray-400
               outline-none focus:border-blue-500 focus:ring-blue-500 sm:text-sm
           '
-          placeholder='name@company.com'
-        />
+            placeholder='name@company.com'
+          />
+        </div>
       </div>
-      <div>
-        <label
-          htmlFor='email'
-          className='mb-2 block text-sm font-medium text-gray-300'
-        >
-          Display Name
-        </label>
+
+      <label
+        htmlFor='email'
+        className='mb-2 block text-sm font-medium text-gray-300'
+      >
+        Display Name
+      </label>
+      <div className='relative'>
         <input
           onChange={handleChangeInput}
           type='displayName'
@@ -94,6 +99,15 @@ const Signup = () => {
           '
           placeholder='Your Name'
         />
+        <span className='absolute right-4 top-[50%] translate-y-[-50%] text-xl text-white'>
+          {showPassword ? (
+            <AiOutlineEye onClick={() => setShowPassword(!showPassword)} />
+          ) : (
+            <AiOutlineEyeInvisible
+              onClick={() => setShowPassword(!showPassword)}
+            />
+          )}
+        </span>
       </div>
       <div>
         <label

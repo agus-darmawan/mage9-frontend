@@ -2,6 +2,7 @@ import { useRouter } from 'next/router'
 import React, { useEffect } from 'react'
 import { useState } from 'react'
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth'
+import { AiOutlineEye, AiOutlineEyeInvisible } from 'react-icons/ai'
 import { toast } from 'react-toastify'
 import { useSetRecoilState } from 'recoil'
 
@@ -11,6 +12,7 @@ import { authModalState } from '@/atoms/authModalAtom'
 import { auth } from '@/firebase/firebase'
 
 const Login = () => {
+  const [showPassword, setShowPassword] = useState(false)
   const setAuthModalState = useSetRecoilState(authModalState)
   const handleClick = (type: 'login' | 'register' | 'forgotPassword') => {
     setAuthModalState((prev) => ({ ...prev, type }))
@@ -81,17 +83,28 @@ const Login = () => {
         >
           Your Password
         </label>
-        <input
-          onChange={handleInputChange}
-          type='password'
-          name='password'
-          id='password'
-          className='
-            block w-full rounded-lg border-2 border-gray-500 bg-gray-600 p-2.5 text-white placeholder-gray-400
-            outline-none focus:border-blue-500 focus:ring-blue-500 sm:text-sm
+        <div className='relative'>
+          <input
+            onChange={handleInputChange}
+            type={showPassword ? 'text' : 'password'}
+            name='password'
+            id='password'
+            className='
+            relative block w-full rounded-lg border-2 border-gray-500 bg-gray-600 p-2.5 text-white
+            placeholder-gray-400 outline-none focus:border-blue-500 focus:ring-blue-500 sm:text-sm
         '
-          placeholder='*******'
-        />
+            placeholder='*******'
+          />
+          <span className='absolute right-4 top-[50%] translate-y-[-50%] text-xl text-white'>
+            {showPassword ? (
+              <AiOutlineEye onClick={() => setShowPassword(!showPassword)} />
+            ) : (
+              <AiOutlineEyeInvisible
+                onClick={() => setShowPassword(!showPassword)}
+              />
+            )}
+          </span>
+        </div>
       </div>
       <button
         type='submit'
