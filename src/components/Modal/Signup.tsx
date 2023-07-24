@@ -5,7 +5,7 @@ import { AiOutlineEye, AiOutlineEyeInvisible } from 'react-icons/ai'
 import { toast } from 'react-toastify'
 import { useSetRecoilState } from 'recoil'
 
-import LoginGoogle from '@/components/buttons/LoginGoogle'
+import LoginSocial from '@/components/buttons/LoginSocial'
 
 import { authModalState } from '@/atoms/authModalAtom'
 import { auth } from '@/firebase/firebase'
@@ -136,7 +136,7 @@ const Signup = () => {
       >
         {loading ? 'Loading...' : 'Register'}
       </button>
-      <LoginGoogle />
+      <LoginSocial />
       <div className='text-sm font-medium text-gray-300'>
         Alredy Have an account?{' '}
         <a

@@ -6,7 +6,7 @@ import { AiOutlineEye, AiOutlineEyeInvisible } from 'react-icons/ai'
 import { toast } from 'react-toastify'
 import { useSetRecoilState } from 'recoil'
 
-import LoginGoogle from '@/components/buttons/LoginGoogle'
+import LoginSocial from '@/components/buttons/LoginSocial'
 
 import { authModalState } from '@/atoms/authModalAtom'
 import { auth } from '@/firebase/firebase'
@@ -112,7 +112,6 @@ const Login = () => {
       >
         {loading ? 'Loading...' : 'Signin'}
       </button>
-      <LoginGoogle />
       <button
         className='flex w-full justify-end'
         onClick={() => handleClick('forgotPassword')}
@@ -124,6 +123,7 @@ const Login = () => {
           Forgot Password?
         </a>
       </button>
+      <LoginSocial />
       <div className='text-sm font-medium text-gray-300'>
         Not Registered?{' '}
         <a

@@ -1,12 +1,12 @@
 import { IconBrandGoogle } from '@tabler/icons-react'
+import { IconLoader2 } from '@tabler/icons-react'
 import { useRouter } from 'next/router'
 import { useEffect } from 'react'
 import { useSignInWithGoogle } from 'react-firebase-hooks/auth'
 import { toast } from 'react-toastify'
 
 import { auth } from '@/firebase/firebase'
-
-const LoginGoogle = () => {
+export default function GoogleButton() {
   const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth)
   const router = useRouter()
   useEffect(() => {
@@ -19,14 +19,17 @@ const LoginGoogle = () => {
     if (user) router.push('/')
   }, [error, user, router])
   return (
-    <button
-      className='flex w-full items-center justify-center rounded-md bg-[#4285F4] px-4 py-2 text-sm font-medium text-white hover:bg-[#357AE8] focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75'
-      onClick={() => signInWithGoogle()}
-    >
-      <IconBrandGoogle className='mr-2 h-5 w-5' />
-      {loading ? 'Loading...' : 'Sign in with Google'}
-    </button>
+    <div>
+      <button
+        className='rounded-full bg-[#DB4437] p-2 text-white hover:bg-orange-400'
+        onClick={() => signInWithGoogle()}
+      >
+        {loading ? (
+          <IconLoader2 className='animate-spin' />
+        ) : (
+          <IconBrandGoogle />
+        )}
+      </button>
+    </div>
   )
 }
-
-export default LoginGoogle
