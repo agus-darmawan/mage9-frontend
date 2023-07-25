@@ -57,7 +57,7 @@ const Signup = () => {
     if (user) router.push('/dashboard')
   }, [error, user, router])
   return (
-    <form className='space-y-6 px-6 py-4' onSubmit={handleRegister}>
+    <form className='space-y-3 px-6 py-4' onSubmit={handleRegister}>
       <h3 className='text-xl font-medium text-white'>Register to MAGE 9</h3>
       <div>
         <label
@@ -82,7 +82,7 @@ const Signup = () => {
       </div>
 
       <label
-        htmlFor='email'
+        htmlFor='name'
         className='mb-2 block text-sm font-medium text-gray-300'
       >
         Display Name
@@ -94,20 +94,11 @@ const Signup = () => {
           name='displayName'
           id='displayName'
           className='
-              block w-full rounded-lg border-2 border-gray-500 bg-gray-600 p-2.5 text-white placeholder-gray-400
+              -mt-2 block w-full rounded-lg border-2 border-gray-500 bg-gray-600 p-2.5 text-white placeholder-gray-400
               outline-none focus:border-blue-500 focus:ring-blue-500 sm:text-sm
           '
           placeholder='Your Name'
         />
-        <span className='absolute right-4 top-[50%] translate-y-[-50%] text-xl text-white'>
-          {showPassword ? (
-            <AiOutlineEye onClick={() => setShowPassword(!showPassword)} />
-          ) : (
-            <AiOutlineEyeInvisible
-              onClick={() => setShowPassword(!showPassword)}
-            />
-          )}
-        </span>
       </div>
       <div>
         <label
@@ -116,17 +107,28 @@ const Signup = () => {
         >
           Your Password
         </label>
-        <input
-          onChange={handleChangeInput}
-          type='password'
-          name='password'
-          id='password'
-          className='
+        <div className='relative'>
+          <input
+            onChange={handleChangeInput}
+            type='password'
+            name='password'
+            id='password'
+            className='
             block w-full rounded-lg border-2 border-gray-500 bg-gray-600 p-2.5 text-white placeholder-gray-400
             outline-none focus:border-blue-500 focus:ring-blue-500 sm:text-sm
         '
-          placeholder='*******'
-        />
+            placeholder='*******'
+          />
+          <span className='absolute right-4 top-[50%] translate-y-[-50%] text-xl text-white'>
+            {showPassword ? (
+              <AiOutlineEye onClick={() => setShowPassword(!showPassword)} />
+            ) : (
+              <AiOutlineEyeInvisible
+                onClick={() => setShowPassword(!showPassword)}
+              />
+            )}
+          </span>
+        </div>
       </div>
       <button
         type='submit'

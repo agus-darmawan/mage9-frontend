@@ -55,7 +55,7 @@ const Login = () => {
     if (user) router.push('/')
   }, [error, user, router])
   return (
-    <form className='space-y-6 px-6 py-4' onSubmit={handleLogin}>
+    <form className='space-y-3 px-6 py-4' onSubmit={handleLogin}>
       <h3 className='text-xl font-medium text-white'>Signin to MAGE 9</h3>
       <div>
         <label
