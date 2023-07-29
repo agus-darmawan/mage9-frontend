@@ -6,6 +6,8 @@ import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import { useAuthState } from 'react-firebase-hooks/auth'
 
+import style from '@/styles/Navbar.module.css'
+
 import useScroll from '@/hooks/useScroll'
 
 import LoginButton from '@/components/buttons/LoginButton'
@@ -104,14 +106,20 @@ export default function Navbar() {
         <div className='text-xl font-semibold text-white'>
           <ul className='hidden flex-row lg:flex '>
             {links.map(({ href, label }) => (
-              <li key={`${href}${label}`} className='link-underline ml-12'>
+              <li
+                key={`${href}${label}`}
+                className={`ml-12 ${style.linkunderline}`}
+              >
                 <Link href={href}>{label}</Link>
               </li>
             ))}
             <li
-              className='link-underline ml-12 flex flex-row'
-              onClick={() => {
-                setdropDownCompe(!dropDownCompe)
+              className={`ml-12 flex flex-row ${style.linkunderline}`}
+              onMouseEnter={() => {
+                setdropDownCompe(true)
+              }}
+              onMouseLeave={() => {
+                setdropDownCompe(false)
               }}
             >
               Competition
@@ -125,7 +133,15 @@ export default function Navbar() {
                 variants={subMenuAnimate}
                 animate={dropDownCompe ? 'enter' : 'exit'}
               >
-                <div className='flex w-max flex-col gap-3 rounded-xl  border-s bg-black/80 px-2 py-4 backdrop-blur-sm'>
+                <div
+                  className='flex w-max flex-col gap-3 rounded-xl  border-s bg-black/80 px-2 py-4 backdrop-blur-sm'
+                  onMouseEnter={() => {
+                    setdropDownCompe(true)
+                  }}
+                  onMouseLeave={() => {
+                    setdropDownCompe(false)
+                  }}
+                >
                   {complinks.map(({ href, label }) => (
                     <ul key={href}>
                       <Link href={href}>
@@ -138,10 +154,10 @@ export default function Navbar() {
                 </div>
               </motion.div>
             </li>
-            <li className='link-underline ml-12'>
+            <li className={`ml-12 ${style.linkunderline}`}>
               <Link href='/workshop'>Workshop</Link>
             </li>
-            <li className='link-underline ml-12'>
+            <li className={`ml-12 ${style.linkunderline}`}>
               <Link href='/faq'>FAQ</Link>
             </li>
             <li className='mx-5 -mt-2 flex flex-col items-center justify-center'>

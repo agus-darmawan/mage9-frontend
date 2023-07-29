@@ -139,10 +139,10 @@ export default function workshop() {
             <div className='col-start-3 col-end-4 '>
               <SpeakerCard
                 title='Robotics'
-                name='Commming Soon'
-                description='Commig Soon'
-                archivment='Coming Soon'
-                image='dummy.svg'
+                name='M. Taufiqul Huda'
+                description='Programming Banyubramanta ITS'
+                archivment='Runner-up Technogine ROV Competition'
+                image='rob.svg'
                 gradient='from-[#87CBB9] to-[#569DAA]'
               />
             </div>
