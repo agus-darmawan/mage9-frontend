@@ -18,7 +18,7 @@
   "dependencies": {
     "@tabler/icons-react": "^2.24.0",
     "add": "^2.0.6",
-    "axios": "^1.4.0",
+    "axios": "^1.6.0",
     "clsx": "^1.2.1",
     "firebase": "^10.0.0",
     "framer-motion": "^10.12.21",
